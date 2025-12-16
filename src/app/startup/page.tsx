@@ -2,12 +2,12 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ChartContainer, ChartTooltip, ChartTooltipContent, BarChart as RechartsBarChart } from "@/components/ui/chart";
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ArrowRight, Target, Lightbulb, Users, BarChart } from "lucide-react";
+import { ArrowRight, Target, Lightbulb, Users, BarChart as BarChartIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
 
 const teamMembers = [
   {
@@ -112,7 +112,7 @@ export default function StartupPage() {
 
         <section id="financials">
            <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold font-headline flex items-center justify-center gap-3"><BarChart className="w-10 h-10 text-primary" /> Financial Projections</h2>
+            <h2 className="text-3xl md:text-4xl font-bold font-headline flex items-center justify-center gap-3"><BarChartIcon className="w-10 h-10 text-primary" /> Financial Projections</h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">Our roadmap to profitability and market leadership, based on a scalable SaaS model.</p>
           </div>
           <Card className="mt-12">
@@ -121,13 +121,13 @@ export default function StartupPage() {
             </CardHeader>
             <CardContent>
               <ChartContainer config={chartConfig} className="w-full h-[400px]">
-                <RechartsBarChart data={chartData} accessibilityLayer>
+                <BarChart data={chartData} accessibilityLayer>
                    <CartesianGrid vertical={false} />
                   <XAxis dataKey="year" tickLine={false} tickMargin={10} axisLine={false} />
                   <YAxis tickLine={false} axisLine={false} tickFormatter={(value) => `$${Number(value) / 1000}k`} />
                   <ChartTooltip content={<ChartTooltipContent />} />
                   <Bar dataKey="revenue" fill="var(--color-revenue)" radius={4} />
-                </RechartsBarChart>
+                </BarChart>
               </ChartContainer>
             </CardContent>
           </Card>
@@ -136,7 +136,7 @@ export default function StartupPage() {
         <section id="contact" className="text-center bg-secondary/50 rounded-lg p-10">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">Become a Part of Our Journey</h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            We are actively seeking grants and strategic partnerships to accelerate our development. If you believe in the future of AI-driven software engineering, let&apos;s connect.
+            We are actively seeking grants and strategic partnerships to accelerate our development. If you believe in the future of AI-driven software engineering, let's connect.
           </p>
           <div className="mt-8">
             <Button asChild size="lg">
