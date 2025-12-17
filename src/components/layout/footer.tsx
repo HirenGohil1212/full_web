@@ -8,10 +8,10 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex items-center gap-2">
             <Cpu className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline">InfinitTech Innovations</span>
+            <span className="font-bold font-headline">Indicortex Solutions LLP</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} InfinitTech Innovations. All rights reserved.
+            © {new Date().getFullYear()} Indicortex Solutions LLP. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="#" aria-label="Twitter">

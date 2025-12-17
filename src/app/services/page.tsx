@@ -1,21 +1,21 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CloudCog, ShieldCheck, BarChart3, Settings2, Code2, BrainCircuit } from "lucide-react";
+import { Smartphone, Code, Bot, Settings2, CloudCog, BrainCircuit } from "lucide-react";
 
 const services = [
   {
-    icon: CloudCog,
-    title: "Cloud Solutions",
-    description: "Leverage the power of the cloud with our bespoke solutions. We offer migration, management, and optimization services for AWS, Azure, and Google Cloud, ensuring scalability, security, and cost-efficiency.",
+    icon: Smartphone,
+    title: "Mobile App Development",
+    description: "Crafting intuitive and high-performing mobile applications for both iOS and Android platforms, tailored to your business goals.",
   },
   {
-    icon: ShieldCheck,
-    title: "Cybersecurity",
-    description: "Protect your digital infrastructure from evolving threats. Our services include vulnerability assessments, penetration testing, security audits, and 24/7 monitoring to safeguard your data.",
+    icon: Code,
+    title: "Web Development",
+    description: "Building responsive, scalable, and secure web solutions, from simple websites to complex enterprise applications.",
   },
   {
-    icon: BarChart3,
-    title: "Data Analytics & BI",
-    description: "Unlock the potential of your data. We help you transform raw data into actionable insights through advanced analytics, machine learning models, and intuitive business intelligence dashboards.",
+    icon: Bot,
+    title: "AI Agent Development",
+    description: "Developing intelligent AI agents and chatbots to automate tasks, improve customer service, and enhance user engagement.",
   },
   {
     icon: Settings2,
@@ -23,14 +23,14 @@ const services = [
     description: "Focus on your core business while we handle your IT. Our managed services cover everything from helpdesk support to network management and strategic IT consulting.",
   },
   {
-    icon: Code2,
-    title: "Custom Software Development",
-    description: "Bring your ideas to life with our custom software solutions. We specialize in web and mobile application development, tailored to your unique business requirements.",
+    icon: CloudCog,
+    title: "Cloud Solutions",
+    description: "Leverage the power of the cloud with our bespoke solutions. We offer migration, management, and optimization services for major cloud platforms.",
   },
   {
     icon: BrainCircuit,
     title: "AI & Machine Learning Integration",
-    description: "Integrate artificial intelligence into your operations. We develop and deploy AI-driven solutions to automate processes, enhance decision-making, and create intelligent products.",
+    description: "Integrate artificial intelligence into your operations. We develop and deploy AI-driven solutions to automate processes and enhance decision-making.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function ServicesPage() {
   return (
     <div className="container py-12 md:py-24 animate-fade-in">
       <div className="text-center max-w-3xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold font-headline">Our IT Services</h1>
+        <h1 className="text-4xl md:text-5xl font-bold font-headline">Our Services</h1>
         <p className="mt-4 text-lg text-muted-foreground">
           We deliver transformative technology solutions that drive business value. Explore our comprehensive suite of IT services designed to meet your needs.
         </p>

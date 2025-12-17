@@ -46,7 +46,7 @@ export default function AboutPage() {
         )}
         <div className="absolute inset-0 bg-background/70" />
         <div className="container relative text-center">
-            <h1 className="text-4xl md:text-5xl font-bold font-headline">About InfinitTech Innovations</h1>
+            <h1 className="text-4xl md:text-5xl font-bold font-headline">About Indicortex Solutions LLP</h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
               We are a collective of thinkers, creators, and innovators dedicated to pushing the boundaries of technology.
             </p>
@@ -58,7 +58,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-bold font-headline text-primary">Our Story</h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Founded in 2015, InfinitTech Innovations started with a simple yet powerful idea: to make advanced technology accessible and impactful for businesses of all sizes. From our humble beginnings in a small office, we have grown into a trusted partner for companies seeking digital transformation. Our journey has been one of continuous learning, adaptation, and an unwavering commitment to our clients' success.
+              Founded with a passion for technology, Indicortex Solutions LLP started with a simple yet powerful idea: to make advanced technology accessible and impactful for businesses of all sizes. From our humble beginnings, we have grown into a trusted partner for companies seeking digital transformation. Our journey has been one of continuous learning, adaptation, and an unwavering commitment to our clients' success.
             </p>
           </div>
           <div className="space-y-6">

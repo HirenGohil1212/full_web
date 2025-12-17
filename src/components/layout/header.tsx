@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Cpu, Menu, Mountain } from 'lucide-react';
+import { Cpu, Menu } from 'lucide-react';
 import { useState } from 'react';
 
 import { Button } from '@/components/ui/button';
@@ -13,8 +13,9 @@ import { cn } from '@/lib/utils';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
-  { href: '/startup', label: 'Startup' },
-  { href: '/grant-finder', label: 'Grant Finder' },
+  { href: '/startups', label: 'Our Startups' },
+  { href: '/portfolio', label: 'Portfolio' },
+  { href: '/case-studies', label: 'Case Studies' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -29,7 +30,7 @@ export default function Header() {
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Cpu className="h-6 w-6 text-primary" />
           <span className="hidden font-bold sm:inline-block font-headline">
-            InfinitTech Innovations
+            Indicortex Solutions
           </span>
         </Link>
         <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
@@ -57,7 +58,7 @@ export default function Header() {
             <SheetContent side="left">
               <Link href="/" className="mr-6 flex items-center space-x-2 mb-6">
                 <Cpu className="h-6 w-6 text-primary" />
-                <span className="font-bold font-headline">InfinitTech</span>
+                <span className="font-bold font-headline">Indicortex</span>
               </Link>
               <div className="flex flex-col space-y-4">
                 {navLinks.map(({ href, label }) => (

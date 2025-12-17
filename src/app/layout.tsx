@@ -6,7 +6,7 @@ import Footer from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'InfinitTech Innovations',
+  title: 'Indicortex Solutions LLP',
   description: 'Professional IT services and startup funding opportunities.',
 };
 

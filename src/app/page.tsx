@@ -1,25 +1,25 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CloudCog, ShieldCheck, BarChart3, ArrowRight } from 'lucide-react';
+import { Smartphone, Code, Bot, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const services = [
   {
-    icon: <CloudCog className="w-8 h-8 text-primary" />,
-    title: 'Cloud Solutions',
-    description: 'Scalable and secure cloud infrastructure to power your business growth.'
+    icon: <Smartphone className="w-8 h-8 text-primary" />,
+    title: 'Mobile App Development',
+    description: 'Crafting intuitive and high-performing mobile applications for iOS and Android.'
   },
   {
-    icon: <ShieldCheck className="w-8 h-8 text-primary" />,
-    title: 'Cybersecurity',
-    description: 'Protecting your digital assets with cutting-edge security measures.'
+    icon: <Code className="w-8 h-8 text-primary" />,
+    title: 'Web Development',
+    description: 'Building responsive and scalable web solutions tailored to your business needs.'
   },
   {
-    icon: <BarChart3 className="w-8 h-8 text-primary" />,
-    title: 'Data Analytics',
-    description: 'Turn data into actionable insights with our advanced analytics services.'
+    icon: <Bot className="w-8 h-8 text-primary" />,
+    title: 'AI Agent Development',
+    description: 'Developing intelligent AI agents to automate tasks and enhance user engagement.'
   }
 ];
 
@@ -43,10 +43,10 @@ export default function Home() {
         <div className="relative container h-full flex flex-col items-start justify-end pb-12 md:pb-24 text-white">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold font-headline text-primary-foreground drop-shadow-md">
-              Innovating IT Solutions for a Digital Future
+              Innovative Solutions for a Digital World
             </h1>
             <p className="mt-4 text-lg md:text-xl text-primary-foreground/90 max-w-2xl">
-              InfinitTech Innovations provides cutting-edge IT services and fosters in-house innovation to tackle tomorrow&apos;s challenges.
+              Indicortex Solutions LLP provides cutting-edge IT services and fosters in-house innovation to tackle tomorrow&apos;s challenges.
             </p>
             <div className="mt-8 flex gap-4">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -88,27 +88,24 @@ export default function Home() {
       <section id="startup" className="py-12 md:py-24 bg-secondary/50">
         <div className="container grid items-center gap-8 lg:grid-cols-2">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold font-headline">Fueling Innovation: Our Internal Startup</h2>
+            <h2 className="text-3xl md:text-4xl font-bold font-headline">Fueling Innovation: Our Startups</h2>
             <p className="mt-4 text-muted-foreground text-lg">
-              We are passionate about innovation. Discover our internal startup project aimed at revolutionizing the tech landscape and learn how you can be a part of it.
+              We are passionate about innovation. Discover our internal startup projects like GrowKrishi, aimed at revolutionizing key industries.
             </p>
             <div className="mt-8 flex gap-4">
               <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                <Link href="/startup">Learn About Our Startup</Link>
-              </Button>
-              <Button asChild variant="outline">
-                <Link href="/grant-finder">Find Grants</Link>
+                <Link href="/startups">Learn About Our Startups</Link>
               </Button>
             </div>
           </div>
           <div className="flex justify-center">
              <Card className="overflow-hidden">
                 <CardHeader>
-                    <CardTitle>Seeking Partnerships</CardTitle>
-                    <CardDescription>Join us in building the future.</CardDescription>
+                    <CardTitle>GrowKrishi</CardTitle>
+                    <CardDescription>On Going</CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <p>Our startup is at a pivotal stage, seeking strategic partners and grants to accelerate our growth. We believe in collaborative success and are looking for investors who share our vision.</p>
+                    <p>An innovative platform for the agricultural sector. We are actively developing this exciting venture.</p>
                 </CardContent>
              </Card>
           </div>
@@ -119,7 +116,7 @@ export default function Home() {
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">Who We Are</h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-3xl mx-auto">
-            InfinitTech Innovations is a team of passionate technologists and strategists dedicated to delivering excellence and driving innovation. Our mission is to empower businesses with transformative technology.
+            Indicortex Solutions LLP is a team of passionate technologists and strategists dedicated to delivering excellence and driving innovation. Our mission is to empower businesses with transformative technology.
           </p>
           <div className="mt-8">
             <Button asChild>
