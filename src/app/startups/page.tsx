@@ -1,7 +1,7 @@
 'use client';
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ArrowRight, Leaf, BarChart, Storefront, Droplets, BrainCircuit } from "lucide-react";
+import { ArrowRight, Leaf, BarChart, Store, Droplets, BrainCircuit } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,7 +12,7 @@ const coreFeatures = [
         description: "Instant disease diagnosis using computer vision. Farmers simply snap a photo to get treatment advice."
     },
     {
-        icon: Storefront,
+        icon: Store,
         title: "Market Linkage",
         description: "Directly connecting farmers with buyers to eliminate middlemen and ensure fair pricing for produce."
     },
