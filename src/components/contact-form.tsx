@@ -16,14 +16,15 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
-import { Loader2 } from 'lucide-react';
-
+import { Loader2, Send } from 'lucide-react';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name is required.'),
   email: z.string().email('Please enter a valid email address.'),
-  company: z.string().optional(),
+  service: z.string().min(1, 'Please select a service.'),
+  budget: z.string().min(1, 'Please select a budget range.'),
   message: z.string().min(10, 'Please enter a message of at least 10 characters.'),
 });
 
@@ -38,7 +39,8 @@ export default function ContactForm() {
         defaultValues: {
             name: '',
             email: '',
-            company: '',
+            service: '',
+            budget: '',
             message: '',
         },
     });
@@ -63,60 +65,101 @@ export default function ContactForm() {
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                 <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <FormField
+                        control={form.control}
+                        name="name"
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormLabel>Full Name</FormLabel>
+                                <FormControl>
+                                    <Input placeholder="John Doe" {...field} />
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )}
+                    />
+                    <FormField
+                        control={form.control}
+                        name="email"
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormLabel>Work Email</FormLabel>
+                                <FormControl>
+                                    <Input type="email" placeholder="john@company.com" {...field} />
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )}
+                    />
+                </div>
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
+                      name="service"
+                      render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Full Name</FormLabel>
+                          <FormLabel>Service Interest</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
-                                <Input placeholder="John Doe" {...field} />
+                              <SelectTrigger>
+                                <SelectValue placeholder="Select a service" />
+                              </SelectTrigger>
                             </FormControl>
-                            <FormMessage />
+                            <SelectContent>
+                              <SelectItem value="mobile">Mobile App Development</SelectItem>
+                              <SelectItem value="web">Web Development</SelectItem>
+                              <SelectItem value="ai">AI Agent Development</SelectItem>
+                              <SelectItem value="other">Other</SelectItem>
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
                         </FormItem>
-                    )}
-                />
-                 <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
+                      )}
+                    />
+                     <FormField
+                      control={form.control}
+                      name="budget"
+                      render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Email Address</FormLabel>
+                          <FormLabel>Budget Range</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
-                                <Input type="email" placeholder="john.doe@example.com" {...field} />
+                              <SelectTrigger>
+                                <SelectValue placeholder="Select a range" />
+                              </SelectTrigger>
                             </FormControl>
-                            <FormMessage />
+                            <SelectContent>
+                              <SelectItem value="5-10k">$5k - $10k</SelectItem>
+                              <SelectItem value="10-25k">$10k - $25k</SelectItem>
+                              <SelectItem value="25-50k">$25k - $50k</SelectItem>
+                              <SelectItem value="50k+">$50k+</SelectItem>
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
                         </FormItem>
-                    )}
-                />
-                 <FormField
-                    control={form.control}
-                    name="company"
-                    render={({ field }) => (
-                        <FormItem>
-                            <FormLabel>Company (Optional)</FormLabel>
-                            <FormControl>
-                                <Input placeholder="Your Company Inc." {...field} />
-                            </FormControl>
-                            <FormMessage />
-                        </FormItem>
-                    )}
-                />
-                 <FormField
+                      )}
+                    />
+                </div>
+                <FormField
                     control={form.control}
                     name="message"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Message</FormLabel>
+                            <FormLabel>How can we help?</FormLabel>
                             <FormControl>
-                                <Textarea placeholder="Let us know how we can help you..." className="min-h-[120px]" {...field} />
+                                <Textarea placeholder="Tell us about your project requirements..." className="min-h-[140px]" {...field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
                     )}
                 />
-                <Button type="submit" className="w-full" disabled={isSubmitting}>
-                     {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                <Button type="submit" className="w-full md:w-auto self-start" disabled={isSubmitting}>
+                     {isSubmitting ? (
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                     ) : (
+                        <Send className="mr-2 h-4 w-4" />
+                     )}
                     Send Message
                 </Button>
             </form>

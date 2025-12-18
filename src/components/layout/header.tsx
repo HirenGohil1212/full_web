@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { Bot, Hexagon, Menu } from 'lucide-react';
+import { Bot, Menu } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -16,6 +16,7 @@ const navLinks = [
   { href: '/portfolio', label: 'Portfolio' },
   { href: '/startups', label: 'Our Startups' },
   { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export default function Header() {
@@ -26,7 +27,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm dark:border-primary/20">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-            <Hexagon className="text-primary h-8 w-8" />
+            <Bot className="text-primary h-8 w-8" />
             <span className="text-xl font-bold tracking-tight">
                 Indicortex
             </span>
@@ -58,13 +59,13 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="left">
                 <Link href="/" className="flex items-center gap-3 mb-6">
-                    <Hexagon className="text-primary h-8 w-8" />
+                    <Bot className="text-primary h-8 w-8" />
                     <span className="text-xl font-bold tracking-tight">
                         Indicortex
                     </span>
                 </Link>
               <div className="flex flex-col space-y-4">
-                {[...navLinks, { href: '/contact', label: 'Contact' }].map(({ href, label }) => (
+                {navLinks.map(({ href, label }) => (
                   <Link
                     key={label}
                     href={href}

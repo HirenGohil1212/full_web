@@ -8,7 +8,7 @@ body {
 
 @layer base {
   :root {
-    --background: 220 13% 97%; /* #f6f7f8 - close to #f6fcf6 */
+    --background: 210 20% 97%; /* #f6f8f6 */
     --foreground: 220 13% 10%;
 
     --card: 0 0% 100%;
@@ -17,7 +17,7 @@ body {
     --popover: 0 0% 100%;
     --popover-foreground: 220 13% 10%;
 
-    --primary: 111 50% 35%; /* #367c2b */
+    --primary: 111 48% 35%; /* #387c2b */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
@@ -26,7 +26,7 @@ body {
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 120 41% 77%; /* #9ccc9c */
+    --accent: 104 43% 66%; /* #96cd83 */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -34,19 +34,19 @@ body {
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 111 50% 35%;
+    --ring: 111 48% 35%;
     
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 140 22% 8%; /* #101a12 */
+    --background: 148 31% 9%; /* #0d1f12 */
     --foreground: 210 20% 96%;
 
-    --card: 150 21% 10%; /* #1a2620 */
+    --card: 146 38% 14%; /* #162e1d */
     --card-foreground: 210 20% 96%;
 
-    --popover: 140 22% 8%;
+    --popover: 148 31% 9%;
     --popover-foreground: 210 20% 96%;
 
     --primary: 111 50% 45%; /* Lighter green for dark mode */
@@ -58,14 +58,14 @@ body {
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 120 20% 30%;
+    --accent: 104 43% 36%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 150 15% 20%; /* #2a3b2f */
-    --input: 150 15% 20%;
+    --border: 150 15% 20%;
+    --input: 210 14% 21%;
     --ring: 111 50% 45%;
   }
 }
