@@ -37,12 +37,6 @@
       "imageHint": "complex puzzle"
     },
     {
-      "id": "startup-solution",
-      "description": "Image representing an innovative solution",
-      "imageUrl": "https://images.unsplash.com/photo-1661529667854-f80158f30f22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxicmlnaHQlMjBpZGVhfGVufDB8fHx8MTc2NjAzNDA2OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bright idea"
-    },
-    {
       "id": "about-us-hero",
       "description": "Image representing the company's team and collaboration",
       "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NjYwMDE2MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -59,6 +53,18 @@
       "description": "Close up of code on a monitor screen",
       "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuALD5M8PdYSuRMNawc2hssMUzl09bFdNLMU4OxzezkSVJWOf795yCmwoGUCX4J9LG1bjKgCHcBCHUQw2Er0O4SRiWAgleVWGewDSirQFFMI1Y-HlOik9JHlmHEytqvM-G4qne36HkrauEIhR7XkmiWzTzPr7sarIYSHZIlIzzSmyvbaSZMbDnVOovQ3D69O9R6ohNPsPEOiDrqam3TKVsJvZelL17JTypEB9Mfymlg87rqUeHgp5Rlf1EVly_icsA4QYQeG91RJS1E",
       "imageHint": "code screen"
+    },
+    {
+      "id": "startups-hero",
+      "description": "Abstract blue tech gradient background representing innovation",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBRQF2oce2rGuly_tCL9YUjg6reBMCtsdKRFr7aDjBmffuUNOMn5KyhI9ijvVrL3RGBRFmyUj-bPZPVBPKQe3dy2YmlCs59tImwTP4fQltzLKwgz3HGyZupaZcbaFw0UhBwzwqk4jNVZjXvuh6j1LwZC3CGcnRv47mAagfA80hTGKTvPS-qdmNTpAcspXDTu5BJqtfcxGtsPEFtucnWkQ3losrtVC1n0QaFcDUv_egWUIr8GAPrFNXcxA2JMjDF1gLTyW9C3rdlnI8",
+      "imageHint": "abstract innovation"
+    },
+    {
+      "id": "growkrishi-dashboard",
+      "description": "Farmer using a tablet in a green field with smart agriculture dashboard overlay",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD8PWH0AfFDhlfOa_wAfWn-zaVYfhnUF0vPJni7TENw_EYfM0pPOwo6jiEoi3DzbCLphWEE2Duz3_XfIQ_7003MSwCZP1qMx2k-uA9xzq7prZSg7fniDJPrrWCNao8WQxBEUnXp1si1wTmx42UX59O9zSFpAP1gl68BQodFSAQFMkB1-NN2Hon4GbAFC_2MZofRifiaoyGUhxBJT3JwpQhjTAFSHI0i5kxZYM3Ci2RqgqckJHLc8vTBAGYUavYUzEAEIkEMbD1DBfM",
+      "imageHint": "smart agriculture"
     }
   ]
 }
