@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 @layer base {
   :root {
-    --background: 220 13% 97%; /* #f6f7f8 */
+    --background: 220 13% 97%; /* #f6f7f8 - close to #f6fcf6 */
     --foreground: 220 13% 10%;
 
     --card: 0 0% 100%;
@@ -17,7 +17,7 @@ body {
     --popover: 0 0% 100%;
     --popover-foreground: 220 13% 10%;
 
-    --primary: 111 50% 33%; /* #387c2b */
+    --primary: 111 50% 35%; /* #367c2b */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
@@ -26,7 +26,7 @@ body {
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 79 99% 42%; /* #98d608 */
+    --accent: 120 41% 77%; /* #9ccc9c */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -34,22 +34,22 @@ body {
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 111 50% 33%;
+    --ring: 111 50% 35%;
     
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 210 20% 12%; /* #101a22 */
-    --foreground: 210 20% 96%; /* #f0f4f8 */
+    --background: 140 22% 8%; /* #101a12 */
+    --foreground: 210 20% 96%;
 
-    --card: 210 20% 15%; /* #1a2632 */
+    --card: 150 21% 10%; /* #1a2620 */
     --card-foreground: 210 20% 96%;
 
-    --popover: 210 20% 12%;
+    --popover: 140 22% 8%;
     --popover-foreground: 210 20% 96%;
 
-    --primary: 111 50% 43%;
+    --primary: 111 50% 45%; /* Lighter green for dark mode */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -58,15 +58,15 @@ body {
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 79 99% 52%;
+    --accent: 120 20% 30%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 111 50% 43%;
+    --border: 150 15% 20%; /* #2a3b2f */
+    --input: 150 15% 20%;
+    --ring: 111 50% 45%;
   }
 }
 

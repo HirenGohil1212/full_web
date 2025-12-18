@@ -12,13 +12,13 @@ export default {
       center: true,
       padding: '1.5rem', // px-6
       screens: {
-        '2xl': '1280px',
+        '2xl': '1200px',
       },
     },
     extend: {
       fontFamily: {
-        body: ['Manrope', 'sans-serif'],
-        headline: ['Manrope', 'sans-serif'],
+        display: ['Manrope', 'sans-serif'],
+        body: ['Noto Sans', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',

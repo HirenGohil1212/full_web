@@ -7,42 +7,6 @@
       "imageHint": "abstract technology"
     },
     {
-      "id": "team-member-1",
-      "description": "Professional headshot of a team member",
-      "imageUrl": "https://images.unsplash.com/photo-1544168190-79c17527004f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY2MDE3NDkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "professional portrait"
-    },
-    {
-      "id": "team-member-2",
-      "description": "Professional headshot of a team member",
-      "imageUrl": "https://images.unsplash.com/photo-1581065178047-8ee15951ede6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjYwMTc0OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "professional portrait"
-    },
-    {
-      "id": "team-member-3",
-      "description": "Professional headshot of a team member",
-      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjYwMTc0OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "professional portrait"
-    },
-    {
-      "id": "team-member-4",
-      "description": "Professional headshot of a team member",
-      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjYwMTc0OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "professional portrait"
-    },
-    {
-      "id": "startup-problem",
-      "description": "Image representing a complex problem",
-      "imageUrl": "https://images.unsplash.com/photo-1679662487761-9962e0dd1193?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb21wbGV4JTIwcHV6emxlfGVufDB8fHx8MTc2NjAzNDA2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "complex puzzle"
-    },
-    {
-      "id": "about-us-hero",
-      "description": "Image representing the company's team and collaboration",
-      "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NjYwMDE2MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "team collaboration"
-    },
-    {
       "id": "why-us-meeting",
       "description": "Team collaborating on a digital project in a modern office",
       "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBGX6gNRzzXMhWz8TLU-aTaEH8q_iLWHwbERX_8YgvsGayreN4NkHPuxplMp6yqPhVXzL9jqTP7xkckvZFRpMfopn-iLYWZnJf8ptNx3JtRWeYIpc-QYjDOL7BzZyffmiSusjMskgARV_HJmM1yeJoWQWnRs73JTiIqR09a3EDNbnuaR1SYfuwGkoS1iNrHEgReK10eto0JmeHHiMEt5CydkNGRYebx3V_0KALIy1axD26hqWTfPSo9BHwworx6VpsJfEri3dv5438",
@@ -65,6 +29,36 @@
       "description": "Farmer using a tablet in a green field with smart agriculture dashboard overlay",
       "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD8PWH0AfFDhlfOa_wAfWn-zaVYfhnUF0vPJni7TENw_EYfM0pPOwo6jiEoi3DzbCLphWEE2Duz3_XfIQ_7003MSwCZP1qMx2k-uA9xzq7prZSg7fniDJPrrWCNao8WQxBEUnXp1si1wTmx42UX59O9zSFpAP1gl68BQodFSAQFMkB1-NN2Hon4GbAFC_2MZofRifiaoyGUhxBJT3JwpQhjTAFSHI0i5kxZYM3Ci2RqgqckJHLc8vTBAGYUavYUzEAEIkEMbD1DBfM",
       "imageHint": "smart agriculture"
+    },
+    {
+      "id": "about-us-hero",
+      "description": "Abstract technological network background with blue nodes",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDKAF3USdtxzKsMvjBhxmuIvaOt0Kv9lCZzrKJSxHR-BB1s82rqYj1VqpeF_fPa6kwmcCb94yXxouauAQ148wJNiIJhOIt44MDbIqGiQrIVp1JmZeUTh3hbOYeNwSaryqVEZWM31WQ8PrajgVSpTJVk0emoaguRV6OgA1jBT3j_Zig6WTijKUGNT6yvV0zT1Mgdg-ekCW8nF-MEt9st3Zxokj71o16wJFJJZkftk2UdTBUnlCryTjR3gBMcxsJhpZ2a4YlvpJRP11k",
+      "imageHint": "technology network"
+    },
+    {
+      "id": "team-member-1",
+      "description": "Portrait of Arjun Mehta, Managing Partner",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDcG5Qgcc-jRjP39LO-QrswdN-K--mbNdIwCFFtB1tEXpTBUEdjWSp1licXyt6TUPH6PCEJwhG0XNLca3hWbae1-lEsKDYuLgc7nKQ3TFttmIDKBMZ7pQpFVxNwXPJzoVmN4FyTuQnTRW3UakjQZo2LXArc8VFYmjrCxRuy3sF72DVhnF5MmVA2BkZCL6qJ4exmfIqkbxNpRkRnTzHUe9rZ4mIXFZaDG-wmI21yMcoxRdsvOEhN5EGfKTrw1OB0hepZX7JBE-QUARQ",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "team-member-2",
+      "description": "Portrait of Priya Sharma, Chief Technology Officer",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAYkYMgMqbmZAdrNTUN8OE_PZLlsshzahHvK35yGKS--830Q255UWzmiGYk1cyyu2hajfIqhzFXSJTvOIWT-lqENsMJa9uLzctB1AJDgT7nzSC6RbbJycOIX547X6Z5stWQu7Rlgn-LeqHkW9UW-Uv0kExi59_9ypELKCW4Ie8qCY4u-GgCoqWOuM-_Jeze41Ae0Dee_8Y7x3g8G2Myutl4eQkIjGl-jMZw-5PSOwMlzCylplS_WrQ2W-qrCTO-CnqVrbxLuHQHchI",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "team-member-3",
+      "description": "Portrait of Vikram Singh, Lead AI Architect",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDg1FgFxiY44rzCqZH4cFqKB-PTiMCntgj8u71pRucFv4vAn34SCHHmpxG2-gOwJK-Bj0FOmvI2YGHYfl--dsprPdU8kYWsvedG4ca5Y7NXnK6NHEATbUVbppjaV9wEZOBM1T8oCNRPJNjjdwS4VrdcMDT63aTEgk9QzwcfZsOROs7WmfTQFyczrdfPeedWZg0FNaNyNaqBePPaFb0LqD-Iw6v4ja7PYeCyst0pNCS-ajcSnwHY1xp99zPLNNudXiDRjfVXFv_Shyg",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "team-member-4",
+      "description": "Portrait of Ananya Das, Head of Product",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBkKPcXn2CsmUsNacbdtDdnl3xeFU2izf_rOhvPYOym87AyIgdgMxs5m-AGpciqPUM7WxbLpczOCQ3_rRwvmDr1psLHyvay7iVYEIxKyVx3SykrtBUroZGtdAXgSkxVYCVen88F7esONAUdNh_NB8CcwivNydhJcAIzxvy9zIdqt0JSuytcNx0nzXucJ27RRiNbqOKPE0Y2eELo6uSivwbXMSJikaK7y7EUBFDPrXqrl2HHoqa3y00K1qZumVGhAavW9Hu5DGWPOLY",
+      "imageHint": "professional portrait"
     }
   ]
 }
