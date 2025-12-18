@@ -4,17 +4,17 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { Bot, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
   { href: '/portfolio', label: 'Portfolio' },
-  { href: '/startups', label: 'Our Startups' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -27,10 +27,10 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm dark:border-primary/20">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-            <Bot className="text-primary h-8 w-8" />
-            <span className="text-xl font-bold tracking-tight">
-                Indicortex
-            </span>
+          <Image src="/logo.png" alt="Indicortex Solutions Logo" width={32} height={32} />
+          <span className="text-xl font-bold tracking-tight">
+            Indicortex Solutions
+          </span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map(({ href, label }) => (
@@ -59,7 +59,7 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="left">
                 <Link href="/" className="flex items-center gap-3 mb-6">
-                    <Bot className="text-primary h-8 w-8" />
+                    <Image src="/logo.png" alt="Indicortex Solutions Logo" width={32} height={32} />
                     <span className="text-xl font-bold tracking-tight">
                         Indicortex
                     </span>
