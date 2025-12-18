@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
+import { Bot, Menu } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -24,7 +25,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/90 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-            <span className="material-symbols-outlined text-primary text-3xl">hub</span>
+            <Bot className="text-primary h-8 w-8" />
             <span className="text-xl font-bold tracking-tight">
                 Indicortex
             </span>
@@ -36,7 +37,7 @@ export default function Header() {
               href={href}
               className={cn(
                 'text-sm font-medium text-muted-foreground transition-colors hover:text-primary',
-                pathname === href && 'text-primary'
+                pathname === href && 'text-primary font-bold'
               )}
             >
               {label}
@@ -50,13 +51,13 @@ export default function Header() {
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
-                <span className="material-symbols-outlined">menu</span>
+                <Menu />
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
                 <Link href="/" className="flex items-center gap-2 mb-6">
-                    <span className="material-symbols-outlined text-primary text-3xl">hub</span>
+                    <Bot className="text-primary h-8 w-8" />
                     <span className="text-xl font-bold tracking-tight">
                         Indicortex
                     </span>
