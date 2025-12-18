@@ -17,7 +17,7 @@ body {
     --popover: 0 0% 100%;
     --popover-foreground: 220 13% 10%;
 
-    --primary: 106 56% 35%; /* #3a7d23 */
+    --primary: 111 50% 33%; /* #387c2b */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
@@ -26,7 +26,7 @@ body {
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 106 35% 69%; /* #96c986 */
+    --accent: 79 99% 42%; /* #98d608 */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -34,22 +34,22 @@ body {
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 106 56% 35%;
+    --ring: 111 50% 33%;
     
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 204 20% 12%; /* #101a22 */
-    --foreground: 0 0% 98%;
+    --background: 210 20% 12%; /* #101a22 */
+    --foreground: 210 20% 96%; /* #f0f4f8 */
 
-    --card: 204 20% 15%; /* darker card */
-    --card-foreground: 0 0% 98%;
+    --card: 210 20% 15%; /* #1a2632 */
+    --card-foreground: 210 20% 96%;
 
-    --popover: 204 20% 12%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 210 20% 12%;
+    --popover-foreground: 210 20% 96%;
 
-    --primary: 106 56% 45%;
+    --primary: 111 50% 43%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -58,7 +58,7 @@ body {
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 106 35% 59%;
+    --accent: 79 99% 52%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -66,7 +66,7 @@ body {
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 106 56% 45%;
+    --ring: 111 50% 43%;
   }
 }
 
@@ -76,5 +76,7 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }

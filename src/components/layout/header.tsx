@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { Bot, Menu } from 'lucide-react';
+import { Bot, Hexagon, Menu } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -23,10 +23,10 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm dark:border-primary/20">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-            <Bot className="text-primary h-8 w-8" />
+        <Link href="/" className="flex items-center gap-3">
+            <Hexagon className="text-primary h-8 w-8" />
             <span className="text-xl font-bold tracking-tight">
                 Indicortex
             </span>
@@ -37,7 +37,7 @@ export default function Header() {
               key={label}
               href={href}
               className={cn(
-                'text-sm font-medium text-muted-foreground transition-colors hover:text-primary',
+                'text-sm font-medium text-foreground transition-colors hover:text-primary',
                 pathname === href && 'text-primary font-bold'
               )}
             >
@@ -46,8 +46,8 @@ export default function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-           <Button asChild className="hidden md:flex rounded-lg h-9 px-5 font-bold shadow-sm hover:shadow-md">
-              <Link href="/contact">Get In Touch</Link>
+           <Button asChild className="hidden md:flex rounded-lg h-10 px-6 font-bold shadow-sm shadow-primary/30">
+              <Link href="/contact">Get a Quote</Link>
            </Button>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
@@ -57,8 +57,8 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
-                <Link href="/" className="flex items-center gap-2 mb-6">
-                    <Bot className="text-primary h-8 w-8" />
+                <Link href="/" className="flex items-center gap-3 mb-6">
+                    <Hexagon className="text-primary h-8 w-8" />
                     <span className="text-xl font-bold tracking-tight">
                         Indicortex
                     </span>
