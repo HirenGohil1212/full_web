@@ -2,6 +2,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Check, Verified } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -108,59 +109,73 @@ export default function Home() {
       </section>
 
       <section id="why-us" className="py-20 bg-card">
-        <div className="container grid items-center gap-12 lg:gap-20 lg:grid-cols-2">
-            <div className="w-full lg:w-1/2">
-                <div className="grid grid-cols-2 gap-4">
-                     {whyUsMeeting && (
-                        <div 
-                            className="w-full aspect-[4/5] bg-cover bg-center rounded-lg shadow-lg translate-y-8" 
-                            style={{backgroundImage: `url(${whyUsMeeting.imageUrl})`}}
-                            data-ai-hint={whyUsMeeting.imageHint}
-                        />
-                    )}
-                    {whyUsCode && (
-                        <div 
-                            className="w-full aspect-[4/5] bg-cover bg-center rounded-lg shadow-lg"
-                            style={{backgroundImage: `url(${whyUsCode.imageUrl})`}}
-                            data-ai-hint={whyUsCode.imageHint}
-                        />
-                    )}
-                </div>
+        <div className="container grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+          <div className="relative h-[500px]">
+            {whyUsMeeting && (
+              <Image
+                src={whyUsMeeting.imageUrl}
+                alt={whyUsMeeting.description}
+                width={300}
+                height={400}
+                data-ai-hint={whyUsMeeting.imageHint}
+                className="absolute top-0 left-0 rounded-xl shadow-lg object-cover w-[300px] h-[400px]"
+              />
+            )}
+            {whyUsCode && (
+              <Image
+                src={whyUsCode.imageUrl}
+                alt={whyUsCode.description}
+                width={300}
+                height={200}
+                data-ai-hint={whyUsCode.imageHint}
+                className="absolute bottom-0 right-0 rounded-xl shadow-lg object-cover w-[300px] h-[200px]"
+              />
+            )}
+          </div>
+          <div className="flex flex-col gap-6">
+            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-primary w-fit">
+              <Verified className="h-4 w-4" />
+              <span className="text-xs font-bold uppercase tracking-wide">
+                Why Choose Us
+              </span>
             </div>
-            <div className="w-full lg:w-1/2 flex flex-col gap-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary w-fit">
-                    <span className="material-symbols-outlined text-sm">verified</span>
-                    <span className="text-xs font-bold uppercase tracking-wide">Why Choose Us</span>
+            <h2 className="text-3xl font-bold leading-tight md:text-4xl">
+              More Than Just Code. <br /> We Build Business Value.
+            </h2>
+            <p className="text-lg leading-relaxed text-muted-foreground">
+              At Indicortex, we don&apos;t just deliver software; we deliver
+              growth. We combine deep technical expertise with creative
+              problem-solving to ensure every solution we build drives real
+              business results.
+            </p>
+            <div className="mt-4 flex flex-col gap-4">
+              <div className="flex items-start gap-4">
+                <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-green-100 p-2 text-green-600 dark:bg-green-900/30 dark:text-green-400">
+                  <Check className="h-5 w-5" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold leading-tight">More Than Just Code. <br /> We Build Business Value.</h2>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                At Indicortex, we don&apos;t just deliver software; we deliver growth. We combine deep technical expertise with creative problem-solving to ensure every solution we build drives real business results.
-                </p>
-                <div className="flex flex-col gap-4 mt-4">
-                    <div className="flex items-start gap-4">
-                        <div className="mt-1 bg-green-100 dark:bg-green-900/30 p-2 rounded-full text-green-600 dark:text-green-400">
-                           <span className="material-symbols-outlined text-xl">check</span>
-                        </div>
-                        <div>
-                            <h4 className="font-bold">Agile Methodology</h4>
-                            <p className="text-sm text-muted-foreground">Rapid iteration and constant feedback loops.</p>
-                        </div>
-                    </div>
-                     <div className="flex items-start gap-4">
-                        <div className="mt-1 bg-green-100 dark:bg-green-900/30 p-2 rounded-full text-green-600 dark:text-green-400">
-                            <span className="material-symbols-outlined text-xl">check</span>
-                        </div>
-                        <div>
-                            <h4 className="font-bold">Future-Proof Tech</h4>
-                            <p className="text-sm text-muted-foreground">Built on modern stacks that scale with you.</p>
-                        </div>
-                    </div>
+                <div>
+                  <h4 className="font-bold">Agile Methodology</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Rapid iteration and constant feedback loops.
+                  </p>
                 </div>
-                <Button asChild className="mt-6 w-fit" size="lg">
-                    <Link href="/about">Learn More About Us</Link>
-                </Button>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-green-100 p-2 text-green-600 dark:bg-green-900/30 dark:text-green-400">
+                  <Check className="h-5 w-5" />
+                </div>
+                <div>
+                  <h4 className="font-bold">Future-Proof Tech</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Built on modern stacks that scale with you.
+                  </p>
+                </div>
+              </div>
             </div>
-          
+            <Button asChild className="mt-6 w-fit" size="lg">
+              <Link href="/about">Learn More About Us</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -179,4 +194,3 @@ export default function Home() {
       </section>
     </div>
   );
-}
