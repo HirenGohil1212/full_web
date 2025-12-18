@@ -2,8 +2,8 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "Abstract technology background for hero section",
-      "imageUrl": "https://images.unsplash.com/photo-1675334758735-5f989ff8237f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzY1OTM4MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Abstract futuristic digital network with green glowing nodes and connections",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBn3P9wd7_o7o06dT7BVRWcBqNcwg6FWaHRyhUOdVjwC84goEyHKvB8YX7v_1BU3-tEB4AXX_zgmn4INh8-EfPMeaYdgTFeH6pgRdQpUkHr7iGVWjkw555cQz-FefHy04g7OMQI5feRimcghY-lQs9P33W5IcKG7pjFthXDbnUFdu_SHsfml_xZ-f4YG5nc0p0fGVzIeaKLkdiMEeUNR1gtDLz-xJMUvhhV1t8a33gnZ_LPrsQEOtBBEgae4zh9mYBT2BQWGx6q0_4",
       "imageHint": "abstract technology"
     },
     {
@@ -50,14 +50,14 @@
     },
     {
       "id": "why-us-meeting",
-      "description": "Team discussing project at a table",
-      "imageUrl": "https://images.unsplash.com/photo-1631203928521-bde1e727e8b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWFtJTIwbWVldGluZ3xlbnwwfHx8fDE3NjU5OTMyNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Team collaborating on a digital project in a modern office",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBGX6gNRzzXMhWz8TLU-aTaEH8q_iLWHwbERX_8YgvsGayreN4NkHPuxplMp6yqPhVXzL9jqTP7xkckvZFRpMfopn-iLYWZnJf8ptNx3JtRWeYIpc-QYjDOL7BzZyffmiSusjMskgARV_HJmM1yeJoWQWnRs73JTiIqR09a3EDNbnuaR1SYfuwGkoS1iNrHEgReK10eto0JmeHHiMEt5CydkNGRYebx3V_0KALIy1axD26hqWTfPSo9BHwworx6VpsJfEri3dv5438",
       "imageHint": "team meeting"
     },
     {
       "id": "why-us-code",
-      "description": "Close up of code on a screen",
-      "imageUrl": "https://images.unsplash.com/photo-1753998943413-8cba1b923c0e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb2RlJTIwc2NyZWVufGVufDB8fHx8MTc2NTk2MTc2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Close up of code on a monitor screen",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuALD5M8PdYSuRMNawc2hssMUzl09bFdNLMU4OxzezkSVJWOf795yCmwoGUCX4J9LG1bjKgCHcBCHUQw2Er0O4SRiWAgleVWGewDSirQFFMI1Y-HlOik9JHlmHEytqvM-G4qne36HkrauEIhR7XkmiWzTzPr7sarIYSHZIlIzzSmyvbaSZMbDnVOovQ3D69O9R6ohNPsPEOiDrqam3TKVsJvZelL17JTypEB9Mfymlg87rqUeHgp5Rlf1EVly_icsA4QYQeG91RJS1E",
       "imageHint": "code screen"
     }
   ]
