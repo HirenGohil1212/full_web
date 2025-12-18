@@ -7,9 +7,9 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { Menu } from 'lucide-react';
+import { Bot, Menu } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -58,6 +58,9 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
+              <SheetHeader>
+                <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+              </SheetHeader>
                 <Link href="/" className="flex items-center gap-3 mb-6">
                     <Image src="/logo.png" alt="Indicortex Solutions Logo" width={40} height={40} />
                     <span className="text-xl font-bold tracking-tight">
