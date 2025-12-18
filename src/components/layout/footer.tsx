@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div className="col-span-1 md:col-span-1 flex flex-col gap-4 max-w-sm">
                  <div className="flex items-center gap-3">
-                    <Image src="/logo.png" alt="Indicortex Solutions Logo" width={24} height={24} />
+                    <Image src="/logo.png" alt="Indicortex Solutions Logo" width={32} height={32} />
                     <span className="text-lg font-bold">Indicortex Solutions</span>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">

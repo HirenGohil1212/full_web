@@ -27,7 +27,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm dark:border-primary/20">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/logo.png" alt="Indicortex Solutions Logo" width={32} height={32} />
+          <Image src="/logo.png" alt="Indicortex Solutions Logo" width={40} height={40} />
           <span className="text-xl font-bold tracking-tight">
             Indicortex Solutions
           </span>
@@ -59,7 +59,7 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="left">
                 <Link href="/" className="flex items-center gap-3 mb-6">
-                    <Image src="/logo.png" alt="Indicortex Solutions Logo" width={32} height={32} />
+                    <Image src="/logo.png" alt="Indicortex Solutions Logo" width={40} height={40} />
                     <span className="text-xl font-bold tracking-tight">
                         Indicortex
                     </span>
