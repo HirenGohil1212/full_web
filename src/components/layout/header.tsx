@@ -24,7 +24,7 @@ const navLinks = [
 const NavLinksContent = () => {
     const pathname = usePathname();
     return (
-        <>
+        <nav className="hidden items-center gap-8 md:flex">
             {navLinks.map(({ href, label, hot }) => (
                 <Link
                     key={label}
@@ -35,10 +35,10 @@ const NavLinksContent = () => {
                     )}
                 >
                     {label}
-                    {hot && <span className="absolute -top-4 -right-2 bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
+                    {hot && <span className="absolute -top-2.5 -right-3.5 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
                 </Link>
             ))}
-        </>
+        </nav>
     );
 };
 
@@ -46,7 +46,7 @@ const NavLinksContent = () => {
 const MobileNavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
     const pathname = usePathname();
     return (
-        <>
+        <div className="flex flex-col space-y-4">
             {navLinks.map(({ href, label, hot }) => (
                 <Link
                     key={label}
@@ -58,39 +58,35 @@ const MobileNavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
                     )}
                 >
                     {label}
-                    {hot && <span className="absolute -top-2 left-full ml-2 bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
+                    {hot && <span className="absolute -top-1 right-0 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
                 </Link>
             ))}
-        </>
+        </div>
     );
 };
 
-
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isClient, setIsClient] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
+    setHasMounted(true);
   }, []);
-
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm dark:border-primary/20">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <Image src="/logo.png" alt="Indicortex Solutions Logo" width={40} height={40} />
-          <span className="text-xl font-bold tracking-tight">
+           <span className="text-xl font-bold tracking-tight">
             Indicortex Solutions
           </span>
         </Link>
         
         <div className="flex items-center gap-4">
-           {isClient ? (
+           {hasMounted ? (
             <>
-                <nav className="hidden items-center gap-8 md:flex">
-                    <NavLinksContent />
-                </nav>
+                <NavLinksContent />
                 <Button asChild className="hidden md:flex rounded-lg h-10 px-6 font-bold shadow-sm shadow-primary/30">
                     <Link href="/contact">Get a Quote</Link>
                 </Button>
@@ -111,9 +107,7 @@ export default function Header() {
                                 Indicortex
                             </span>
                         </Link>
-                    <div className="flex flex-col space-y-4">
                         <MobileNavLinks closeMenu={() => setIsMobileMenuOpen(false)} />
-                    </div>
                     </SheetContent>
                 </Sheet>
             </>
