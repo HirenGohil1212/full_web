@@ -15,6 +15,7 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
   { href: '/portfolio', label: 'Portfolio' },
+  { href: '/startups', label: 'Our Startups' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -39,7 +40,7 @@ export default function Header() {
               href={href}
               className={cn(
                 'text-sm font-medium text-foreground transition-colors hover:text-primary',
-                pathname === href && 'text-primary font-bold'
+                pathname === href && 'text-primary font-bold border-b-2 border-primary'
               )}
             >
               {label}
