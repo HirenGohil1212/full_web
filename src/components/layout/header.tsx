@@ -35,17 +35,19 @@ function NavLinks() {
           )}
         >
           {label}
-          {hot && <span className="absolute -top-5 -right-3 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
+          {hot && <span className="absolute -top-5 -right-4 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
         </Link>
       ))}
     </nav>
   );
 }
 
-function MobileNav({ closeMenu }: { closeMenu: () => void }) {
+function MobileNav() {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <Sheet>
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon" className="md:hidden">
           <Menu />
@@ -67,14 +69,14 @@ function MobileNav({ closeMenu }: { closeMenu: () => void }) {
                 <Link
                     key={label}
                     href={href}
-                    onClick={closeMenu}
+                    onClick={() => setIsOpen(false)}
                     className={cn(
                         'relative text-lg font-medium text-muted-foreground transition-colors hover:text-primary',
                         pathname === href && 'text-primary'
                     )}
                 >
                     {label}
-                    {hot && <span className="absolute -top-2 right-0 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full -translate-y-1/2 translate-x-full">HOT</span>}
+                    {hot && <span className="absolute -top-5 -right-4 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
                 </Link>
             ))}
         </div>
@@ -83,10 +85,8 @@ function MobileNav({ closeMenu }: { closeMenu: () => void }) {
   );
 }
 
-
 export default function Header() {
   const [isClient, setIsClient] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
@@ -94,7 +94,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm dark:border-primary/20">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <Image src="/logo.png" alt="Indicortex Solutions Logo" width={40} height={40} />
            <span className="text-xl font-bold tracking-tight">
@@ -103,23 +103,18 @@ export default function Header() {
         </Link>
         
         <div className="flex items-center gap-4">
+          {/* This content will only render on the client after the component has mounted. */}
           {isClient ? (
             <>
               <NavLinks />
               <Button asChild className="hidden md:flex rounded-lg h-10 px-6 font-bold shadow-sm shadow-primary/30">
                 <Link href="/contact">Get a Quote</Link>
               </Button>
-              <MobileNav closeMenu={() => setIsMobileMenuOpen(false)} />
+              <MobileNav />
             </>
           ) : (
-            <>
-              {/* Fallback skeleton for SSR to prevent hydration mismatch */}
-              <div className="hidden md:flex h-10 items-center gap-8 w-[584px]">
-                  <div className="h-6 w-[480px]"></div>
-                  <div className="h-10 w-[104px]"></div>
-              </div>
-              <div className="h-10 w-10 md:hidden"></div>
-            </>
+            // This is the server-rendered and initial client-rendered HTML. It is a simple, static placeholder.
+            <div className="h-10 w-[124px] md:w-[584px]"></div>
            )}
         </div>
 
