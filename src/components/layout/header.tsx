@@ -35,7 +35,7 @@ const NavLinksContent = () => {
                     )}
                 >
                     {label}
-                    {hot && <span className="absolute -top-2.5 -right-3.5 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
+                    {hot && <span className="absolute -top-3 -right-4 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
                 </Link>
             ))}
         </nav>
@@ -58,7 +58,7 @@ const MobileNavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
                     )}
                 >
                     {label}
-                    {hot && <span className="absolute -top-1 right-0 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
+                    {hot && <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
                 </Link>
             ))}
         </div>
@@ -66,8 +66,8 @@ const MobileNavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
 };
 
 export default function Header() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hasMounted, setHasMounted] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     setHasMounted(true);
@@ -82,41 +82,41 @@ export default function Header() {
             Indicortex Solutions
           </span>
         </Link>
-        
+
         <div className="flex items-center gap-4">
-           {hasMounted ? (
+          {hasMounted ? (
             <>
-                <NavLinksContent />
-                <Button asChild className="hidden md:flex rounded-lg h-10 px-6 font-bold shadow-sm shadow-primary/30">
-                    <Link href="/contact">Get a Quote</Link>
-                </Button>
-                <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-                    <SheetTrigger asChild>
-                    <Button variant="ghost" size="icon" className="md:hidden">
-                        <Menu />
-                        <span className="sr-only">Toggle navigation menu</span>
-                    </Button>
-                    </SheetTrigger>
-                    <SheetContent side="left">
-                    <SheetHeader>
-                        <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
-                    </SheetHeader>
-                        <Link href="/" className="flex items-center gap-3 mb-6">
-                            <Image src="/logo.png" alt="Indicortex Solutions Logo" width={40} height={40} />
-                            <span className="text-xl font-bold tracking-tight">
-                                Indicortex
-                            </span>
-                        </Link>
-                        <MobileNavLinks closeMenu={() => setIsMobileMenuOpen(false)} />
-                    </SheetContent>
-                </Sheet>
+              <NavLinksContent />
+              <Button asChild className="hidden md:flex rounded-lg h-10 px-6 font-bold shadow-sm shadow-primary/30">
+                <Link href="/contact">Get a Quote</Link>
+              </Button>
+              <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon" className="md:hidden">
+                    <Menu />
+                    <span className="sr-only">Toggle navigation menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="left">
+                  <SheetHeader>
+                    <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                  </SheetHeader>
+                  <Link href="/" className="flex items-center gap-3 mb-6">
+                    <Image src="/logo.png" alt="Indicortex Solutions Logo" width={40} height={40} />
+                    <span className="text-xl font-bold tracking-tight">
+                      Indicortex
+                    </span>
+                  </Link>
+                  <MobileNavLinks closeMenu={() => setIsMobileMenuOpen(false)} />
+                </SheetContent>
+              </Sheet>
             </>
-           ) : (
-             <>
-               <div className="hidden h-6 w-[584px] md:flex"></div>
-               <div className="h-10 w-10 md:hidden"></div>
-             </>
-            )}
+          ) : (
+            <>
+              <div className="hidden h-6 w-[584px] md:flex"></div>
+              <div className="h-10 w-10 md:hidden"></div>
+            </>
+           )}
         </div>
 
       </div>
