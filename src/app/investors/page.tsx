@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ArrowRight, School, Hub, Terminal, DollarSign, TrendingUp, Rocket } from "lucide-react";
+import { ArrowRight, School, Network, Terminal, DollarSign, TrendingUp, Rocket } from "lucide-react";
 
 export default function InvestorsPage() {
 
@@ -139,7 +139,7 @@ export default function InvestorsPage() {
                             </div>
                             <div className="flex items-center gap-3 mb-3">
                                 <div className="p-2 bg-green-100 dark:bg-green-900/30 rounded text-primary">
-                                    <Hub />
+                                    <Network />
                                 </div>
                                 <h4 className="text-xl font-bold">Channel Partner</h4>
                             </div>
