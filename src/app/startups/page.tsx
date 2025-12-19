@@ -1,7 +1,7 @@
 'use client';
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ArrowRight, Leaf, BarChart, Store, Droplets, BrainCircuit, Agriculture, Storefront, WaterDrop } from "lucide-react";
+import { ArrowRight, Leaf, BrainCircuit, Store, Droplets } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,7 +17,7 @@ const coreFeatures = [
         description: "Directly connecting farmers with buyers to eliminate middlemen and ensure fair pricing for produce."
     },
     {
-        icon: WaterDrop,
+        icon: Droplets,
         title: "Smart Irrigation",
         description: "IoT-based soil monitoring to optimize water usage, reducing waste and increasing yield."
     }
