@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { Bot, Menu } from 'lucide-react';
+import { Menu, Bot } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -40,7 +40,7 @@ export default function Header() {
               href={href}
               className={cn(
                 'text-sm font-medium text-foreground transition-colors hover:text-primary',
-                pathname === href && 'text-primary font-bold border-b-2 border-primary'
+                pathname === href ? 'text-primary font-bold border-b-2 border-primary' : ''
               )}
             >
               {label}
