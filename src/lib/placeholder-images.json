@@ -59,6 +59,36 @@
       "description": "Portrait of Ananya Das, Head of Product",
       "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBkKPcXn2CsmUsNacbdtDdnl3xeFU2izf_rOhvPYOym87AyIgdgMxs5m-AGpciqPUM7WxbLpczOCQ3_rRwvmDr1psLHyvay7iVYEIxKyVx3SykrtBUroZGtdAXgSkxVYCVen88F7esONAUdNh_NB8CcwivNydhJcAIzxvy9zIdqt0JSuytcNx0nzXucJ27RRiNbqOKPE0Y2eELo6uSivwbXMSJikaK7y7EUBFDPrXqrl2HHoqa3y00K1qZumVGhAavW9Hu5DGWPOLY",
       "imageHint": "professional portrait"
+    },
+    {
+      "id": "investor-hero",
+      "description": "Data visualization dashboard on a modern screen with green highlights",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBwrvhSbyIzgvFpgYDlfQ4hJkqFQh_6OK_xi5yleHzhJsU5QeP_ATaw_uBFk__Os1v8LRnW3ipEpJ32i3DB--bJFcDltTUBUc8P_cEKDO61Ird_CqyaddBl76RGk1tS08-XAH8b0oKAd3-up1Z1n88pl-k6ffs05QU8DbaJI7sPN9RvM9vhHaD2FfXhPbVsxaXezRZCCjWLo1x8J4fE1mk_kNTr-CryP3nru4Lix98_Z0nVSrM7sSyvoeXHE-HaqUypBSyYHOit5FU",
+      "imageHint": "data visualization"
+    },
+    {
+      "id": "investor-capital",
+      "description": "Close up of financial growth graph with coins",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDQTI1XNymub1mp4lWqYryDJtsrItpg9kKD1K-VC_XZa1mQoFGCoE7Q0PAr9e9tV0xY6HaNCHR8gJXDSl85mFn1WMpNS3Kbj2CvljqqR_LQiYJNQWfK8ZlAU-p6rt9jOmUAVfO5IpczzQbRd4tZs_zhNBI-TnC8ZV9aP2WEE89aweE20t_xybQTo-wYGAvT-Y8Lr6tFTNQwJ3wsPK5Rb6FwOws4Hm4kSIuW2xjWD_80-5gizeYkQmMEe9IgPMY7ADUhWtgO7fru-BA",
+      "imageHint": "financial growth"
+    },
+    {
+      "id": "investor-mentorship",
+      "description": "People brainstorming in a meeting room",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCmFhOxCZIra4qURNPCAEeXEaEz0XNcKS9NDEL1HgWZHAhhUYsUQxFIUKHpIWwtldhCnKDYXkpXY98Q2ZBbo9hIU9xqiXeBPz8CCib13TTjEWCPOytoAXaGJzQO_nbSkuPocPkt99VGTyhIm3funH9ej-nkfEE5UBLCvUqlTSV1NBgT1_E9xu9WHtcukuONdqaou6YkudWZR-rD0BAgwXKOlD8-Osxh1ZyS5Q7EqSb_i8RIIiOd3sxGWpxNLHjuckp3iI5fQZF1Kpc",
+      "imageHint": "team meeting"
+    },
+    {
+      "id": "investor-partner",
+      "description": "Handshake between business partners",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDL-74fFgurJy7Gd25yzOZ99PXP2DrLJinPw1L8zmiGx45Uo5CMvjiVzLQR4ita3JwdwJmPSKyAbdqGjtadEBS2Cd70LTMBDZZiE_GZeRd4phV9ugPO9x3YMM32GOtIyfj_-dKkWE44WTKJlT1EQ5fJDiWJjWI6xICYpFE7Sz3qAv5b7NscfUnNJ0MRvDFtWDWgwzEogYVEBSkPlchBmjBDClVzlDPLawvQ2BEMoht5PPuOu_fcuuk76lRm9AWJGd04gERAZSPN_vs",
+      "imageHint": "business handshake"
+    },
+    {
+      "id": "investor-developer",
+      "description": "Programmer writing code on multiple monitors",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDmRY0HlYJ0rXxr34yNLHPJSiicPTKf3oFliqInt_Q9Ql1ic9SkwpqeDTpXFn27fDC6ZI_8omZoGpcy18cFRo-5ihnlrojFMOM-GVUal_RYXmAS1Y7WHBmF84r2h7CGvBuK1n13T1duXu7nPBXTO59bX_Bk4tl-lseEK9kLYBLidOqniBWv73R_TwnagdEhCqXHOZecadD9z5maO6DJuyWJTcH7oBfzEak1jD0VVMumzsBRkBvMh9axXZdma5tKLg4R2wlINh4GJDs",
+      "imageHint": "code screen"
     }
   ]
 }
