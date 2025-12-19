@@ -58,7 +58,7 @@ const MobileNavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
                     )}
                 >
                     {label}
-                    {hot && <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
+                    {hot && <span className="absolute -top-2 -right-1 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
                 </Link>
             ))}
         </div>
@@ -113,7 +113,8 @@ export default function Header() {
             </>
           ) : (
             <>
-              <div className="hidden h-6 w-[584px] md:flex"></div>
+              <div className="hidden h-6 w-[480px] md:flex"></div>
+              <div className="hidden h-10 w-[124px] md:flex"></div>
               <div className="h-10 w-10 md:hidden"></div>
             </>
            )}
