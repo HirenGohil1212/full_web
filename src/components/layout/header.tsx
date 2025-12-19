@@ -86,10 +86,10 @@ function MobileNav() {
 }
 
 export default function Header() {
-  const [isClient, setIsClient] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
+    setIsMounted(true);
   }, []);
 
   return (
@@ -104,7 +104,7 @@ export default function Header() {
         
         <div className="flex items-center gap-4">
           {/* This content will only render on the client after the component has mounted. */}
-          {isClient ? (
+          {isMounted ? (
             <>
               <NavLinks />
               <Button asChild className="hidden md:flex rounded-lg h-10 px-6 font-bold shadow-sm shadow-primary/30">
@@ -113,8 +113,14 @@ export default function Header() {
               <MobileNav />
             </>
           ) : (
-            // This is the server-rendered and initial client-rendered HTML. It is a simple, static placeholder.
-            <div className="h-10 w-[124px] md:w-[584px]"></div>
+             <>
+               {/* Fallback skeleton for SSR to prevent hydration mismatch */}
+               <div className="hidden h-10 w-[584px] md:flex items-center justify-end gap-4">
+                   <div className="h-6 w-[480px]"></div>
+                   <div className="h-10 w-[104px]"></div>
+               </div>
+               <div className="h-10 w-10 md:hidden"></div>
+             </>
            )}
         </div>
 
