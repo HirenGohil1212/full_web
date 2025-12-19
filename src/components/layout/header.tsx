@@ -76,7 +76,7 @@ function MobileNav() {
                     )}
                 >
                     {label}
-                    {hot && <span className="absolute -top-5 -right-4 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
+                    {hot && <span className="absolute top-0 -right-4 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">HOT</span>}
                 </Link>
             ))}
         </div>
@@ -114,8 +114,8 @@ export default function Header() {
             </>
           ) : (
              <>
-               {/* Fallback skeleton for SSR to prevent hydration mismatch */}
-               <div className="hidden h-10 w-[584px] md:flex items-center justify-end gap-4">
+               {/* Fallback skeleton for SSR to prevent hydration mismatch. This MUST match on the initial client render. */}
+               <div className="hidden h-10 w-[584px] items-center justify-end gap-4 md:flex">
                    <div className="h-6 w-[480px]"></div>
                    <div className="h-10 w-[104px]"></div>
                </div>
