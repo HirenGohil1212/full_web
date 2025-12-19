@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ArrowRight, School, Hub, Terminal, AttachMoney, TrendingUp, RocketLaunch } from "lucide-react";
+import { ArrowRight, School, Hub, Terminal, DollarSign, TrendingUp, Rocket } from "lucide-react";
 
 export default function InvestorsPage() {
 
@@ -101,7 +101,7 @@ export default function InvestorsPage() {
                             </div>
                             <div className="flex items-center gap-3 mb-3">
                                 <div className="p-2 bg-green-100 dark:bg-green-900/30 rounded text-primary">
-                                    <AttachMoney />
+                                    <DollarSign />
                                 </div>
                                 <h4 className="text-xl font-bold">Capital</h4>
                             </div>
@@ -208,7 +208,7 @@ export default function InvestorsPage() {
                     <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
                     <div className="relative z-10 flex flex-col items-center gap-6">
                         <div className="inline-flex items-center justify-center p-3 rounded-full bg-primary/20 text-primary mb-2">
-                            <RocketLaunch className="text-3xl" />
+                            <Rocket className="text-3xl" />
                         </div>
                         <h2 className="text-3xl md:text-5xl font-black leading-tight tracking-tight">
                             Ready to start the conversation?
