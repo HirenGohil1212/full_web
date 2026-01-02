@@ -59,13 +59,6 @@ const portfolioProjects = [
     imageHint: "catering food",
   },
   {
-    title: "UPI 11",
-    description: "Seamless UPI payment integration solution with enhanced security features.",
-    category: "FinTech",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBKelDUN9LMUgX9G3rl1LslakrN19aJGG8qq7ZmhWJ_W75kdhm1rsZG5FDVS8C9YsSWqJurY1hwBpOx1xtHgXDagOLYzaZ6vpw571Vu9Tr-IIXpuMJ8XShG9MxSmm4I_4waFBQ_HqMYBgwegHiHfE24j1766SkqjpkGleGoUCcBbKBo6RD6QkozJPJEkfdAZTOxfmGWFq7TGo0SQ1rpuYxFJJBgOSZumJlGv1PnnIKWuKTCCeM3zyVn6Cwggw_FtmLzgPtdFo18FwY",
-    imageHint: "fantasy sports",
-  },
-  {
     title: "Mediclock Healthcare",
     description: "Mobile application for patient appointment scheduling and medication reminders.",
     category: "HealthTech",
