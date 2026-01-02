@@ -173,7 +173,7 @@ export default function AboutPage() {
                                 data-ai-hint={member.image.imageHint}
                                 width={400}
                                 height={400}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover scale-110"
                                 />
                             )}
                         </div>
