@@ -18,7 +18,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
-import { Loader2, Send } from 'lucide-react';
+import { Loader2, Mail, MessageCircle } from 'lucide-react';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name is required.'),
@@ -45,26 +45,49 @@ export default function ContactForm() {
         },
     });
 
-    // In a real application, you would send this data to a server
-    async function onSubmit(data: ContactFormValues) {
-        setIsSubmitting(true);
-        console.log('Form submitted:', data);
-
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        
-        setIsSubmitting(false);
-        form.reset();
-
+    const handleSendEmail = (data: ContactFormValues) => {
+        const subject = `New Inquiry: ${data.service}`;
+        const body = `Name: ${data.name}\nEmail: ${data.email}\nService: ${data.service}\nBudget: ${data.budget}\n\nMessage:\n${data.message}`;
+        window.location.href = `mailto:hirengohil.ceo@indicortexsolutions.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         toast({
-            title: "Message Sent!",
-            description: "Thank you for reaching out. We'll get back to you shortly.",
+            title: "Email Client Opened",
+            description: "Your email client has been opened with the message details.",
         });
+        form.reset();
+    };
+
+    const handleSendWhatsApp = (data: ContactFormValues) => {
+        const message = `Hello Indicortex, I have a new inquiry:\n\n*Name*: ${data.name}\n*Email*: ${data.email}\n*Service*: ${data.service}\n*Budget*: ${data.budget}\n\n*Message*:\n${data.message}`;
+        const whatsappUrl = `https://wa.me/917990305570?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+        toast({
+            title: "WhatsApp Opened",
+            description: "WhatsApp has been opened with the message details.",
+        });
+        form.reset();
+    };
+
+    // We can use a single submit handler that decides which action to take,
+    // or have separate click handlers for each button.
+    // For this, we'll use separate click handlers on buttons that are NOT type="submit"
+    // and manually trigger form validation.
+    const onSendEmailClick = async () => {
+        const isValid = await form.trigger();
+        if (isValid) {
+            handleSendEmail(form.getValues());
+        }
+    }
+    
+    const onSendWhatsAppClick = async () => {
+        const isValid = await form.trigger();
+        if (isValid) {
+            handleSendWhatsApp(form.getValues());
+        }
     }
 
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <FormField
                         control={form.control}
@@ -100,7 +123,7 @@ export default function ContactForm() {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel>Service Interest</FormLabel>
-                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                          <Select onValueChange={field.onChange} defaultValue={field.value} value={field.value}>
                             <FormControl>
                               <SelectTrigger>
                                 <SelectValue placeholder="Select a service" />
@@ -123,7 +146,7 @@ export default function ContactForm() {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel>Budget Range</FormLabel>
-                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                          <Select onValueChange={field.onChange} defaultValue={field.value} value={field.value}>
                             <FormControl>
                               <SelectTrigger>
                                 <SelectValue placeholder="Select a range" />
@@ -154,14 +177,24 @@ export default function ContactForm() {
                         </FormItem>
                     )}
                 />
-                <Button type="submit" className="w-full md:w-auto self-start" disabled={isSubmitting}>
-                     {isSubmitting ? (
-                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                     ) : (
-                        <Send className="mr-2 h-4 w-4" />
-                     )}
-                    Send Message
-                </Button>
+                <div className="flex flex-col md:flex-row gap-4">
+                    <Button type="button" onClick={onSendEmailClick} className="w-full" disabled={isSubmitting}>
+                         {isSubmitting ? (
+                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                         ) : (
+                            <Mail className="mr-2 h-4 w-4" />
+                         )}
+                        Send via Email
+                    </Button>
+                     <Button type="button" onClick={onSendWhatsAppClick} className="w-full" variant="secondary" disabled={isSubmitting}>
+                         {isSubmitting ? (
+                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                         ) : (
+                            <MessageCircle className="mr-2 h-4 w-4" />
+                         )}
+                        Send on WhatsApp
+                    </Button>
+                </div>
             </form>
         </Form>
     );
