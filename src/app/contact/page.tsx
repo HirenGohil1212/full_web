@@ -31,7 +31,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h3 className="text-base font-bold text-foreground">Email Us</h3>
-                                    <p className="text-muted-foreground text-sm mt-1">contact@indicortex.com</p>
+                                    <p className="text-muted-foreground text-sm mt-1">hirengohil.ceo@indicortexsolutions.com</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4 rounded-xl border bg-card p-5 shadow-sm hover:shadow-md transition-shadow group">
@@ -40,7 +40,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h3 className="text-base font-bold text-foreground">Call Us</h3>
-                                    <p className="text-muted-foreground text-sm mt-1">+1 (555) 123-4567</p>
+                                    <p className="text-muted-foreground text-sm mt-1">+91 7990305570</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4 rounded-xl border bg-card p-5 shadow-sm hover:shadow-md transition-shadow group">
