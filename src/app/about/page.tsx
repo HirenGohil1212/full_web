@@ -5,24 +5,9 @@ import Image from "next/image";
 
 const teamMembers = [
   {
-    name: "Arjun Mehta",
-    role: "Managing Partner",
-    image: PlaceHolderImages.find((img) => img.id === "team-member-1"),
-  },
-  {
-    name: "Priya Sharma",
-    role: "Chief Technology Officer",
-    image: PlaceHolderImages.find((img) => img.id === "team-member-2"),
-  },
-  {
-    name: "Vikram Singh",
-    role: "Lead AI Architect",
-    image: PlaceHolderImages.find((img) => img.id === "team-member-3"),
-  },
-  {
-    name: "Ananya Das",
-    role: "Head of Product",
-    image: PlaceHolderImages.find((img) => img.id === "team-member-4"),
+    name: "Hiren Gohil",
+    role: "Founder & CEO",
+    image: PlaceHolderImages.find((img) => img.id === "founder-ceo"),
   },
 ];
 
@@ -172,15 +157,15 @@ export default function AboutPage() {
       </section>
       
       <section className="py-16">
-          <div className="container px-6 lg:px-10">
-            <div className="flex flex-col gap-4 mb-10 text-center">
-                <h2 className="text-3xl md:text-4xl font-bold font-display leading-tight tracking-[-0.02em]">Meet the Minds</h2>
-                <p className="text-muted-foreground text-lg">Our leadership team brings decades of combined experience in software engineering and business strategy.</p>
+          <div className="container px-6 lg:px-10 flex flex-col items-center">
+            <div className="flex flex-col gap-4 mb-10 text-center max-w-lg">
+                <h2 className="text-3xl md:text-4xl font-bold font-display leading-tight tracking-[-0.02em]">Meet the Mind Behind Indicortex</h2>
+                <p className="text-muted-foreground text-lg">Our leadership brings decades of combined experience in software engineering and business strategy.</p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="flex justify-center">
                 {teamMembers.map((member) => (
-                    <div key={member.name} className="flex flex-col gap-0 rounded-lg overflow-hidden bg-card shadow-sm hover:shadow-md transition-shadow">
-                        <div className="h-64 w-full bg-gray-200 overflow-hidden">
+                    <div key={member.name} className="flex flex-col gap-0 rounded-lg overflow-hidden bg-card shadow-sm hover:shadow-md transition-shadow max-w-sm">
+                        <div className="h-80 w-full bg-gray-200 overflow-hidden">
                             {member.image && (
                                 <Image
                                 src={member.image.imageUrl}
