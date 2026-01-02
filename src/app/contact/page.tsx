@@ -35,7 +35,7 @@ export default function ContactPage() {
                                 </div>
                             </div>
                             <div className="flex items-start gap-4 rounded-xl border bg-card p-5 shadow-sm hover:shadow-md transition-shadow group">
-                                <div className="bg-primary/10 p-3 rounded-lg text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                                <div className="bg-primary/10 p-3 rounded-lg text-primary flex items-center justify-center group-hover-bg-primary group-hover:text-primary-foreground transition-colors">
                                     <Phone />
                                 </div>
                                 <div>
@@ -51,15 +51,6 @@ export default function ContactPage() {
                                     <h3 className="text-base font-bold text-foreground">Visit Us</h3>
                                     <p className="text-muted-foreground text-sm mt-1">Surat, Gujarat</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="mt-4 rounded-xl overflow-hidden border h-48 w-full relative group">
-                            <Image alt="Map showing location in Surat, Gujarat" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90" data-ai-hint="map Surat India" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3_J_w-llc8K6K_c4IuF_4r2s2-R_i3wQ8F_zQ8Z2qQ2_y_y_w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w" fill />
-                            <div className="absolute inset-0 bg-primary/10 pointer-events-none"></div>
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <Button asChild className="bg-card/95 text-primary hover:bg-primary hover:text-primary-foreground transition-colors border border-primary/10">
-                                    <a href="https://www.google.com/maps/place/Surat,+Gujarat,+India" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
-                                </Button>
                             </div>
                         </div>
                     </div>
