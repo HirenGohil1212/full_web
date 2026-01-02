@@ -49,16 +49,16 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h3 className="text-base font-bold text-foreground">Visit Us</h3>
-                                    <p className="text-muted-foreground text-sm mt-1">123 Tech Park, Innovation Way,<br/>Silicon Valley, CA</p>
+                                    <p className="text-muted-foreground text-sm mt-1">Surat, Gujarat</p>
                                 </div>
                             </div>
                         </div>
                         <div className="mt-4 rounded-xl overflow-hidden border h-48 w-full relative group">
-                            <Image alt="Map showing location in Silicon Valley" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90" data-ai-hint="map Silicon Valley" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj-uKdkiup52s-1mhNNT4jlfFI_nRl_R_SDyNreiPolKAzsg1zc-fwijeQQrpDJvBdSiftlB9CnYZLjq0zANj0OKv3iLmVa0dkjuDs7P96cGoHxzDeFDPuvo8Xppqrfx2K4mEHE1omd0Swl9XfemzruRujAmfBVGWlOO4Hf-9hM7KkCCvpov9LCfTNSPogx-PIWmk0yv7m7hQglXE3tuQNfjY_1LLnAKyYyBqKfq546tDANNamXvPREXiyDcALE7cMmaCx4f5GqAI" fill />
+                            <Image alt="Map showing location in Surat, Gujarat" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90" data-ai-hint="map Surat India" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3_J_w-llc8K6K_c4IuF_4r2s2-R_i3wQ8F_zQ8Z2qQ2_y_y_w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w8c8Yy8B8w" fill />
                             <div className="absolute inset-0 bg-primary/10 pointer-events-none"></div>
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <Button asChild className="bg-card/95 text-primary hover:bg-primary hover:text-primary-foreground transition-colors border border-primary/10">
-                                    <a href="#" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
+                                    <a href="https://www.google.com/maps/place/Surat,+Gujarat,+India" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
                                 </Button>
                             </div>
                         </div>
