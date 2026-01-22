@@ -113,7 +113,7 @@ export default function Home() {
                    </div>
                   <h3 className="text-xl font-bold mb-3">{service.title}</h3>
                   <p className="text-muted-foreground mb-6 leading-relaxed flex-grow">{service.description}</p>
-                   <Link href="/services" className="inline-flex items-center text-primary font-bold hover:underline gap-1 group-hover:gap-2 transition-all">
+                   <Link href="/services" className="inline-flex items-center text-primary font-bold hover:underline gap-1 group-hover:gap-2 transition-all" aria-label={`Learn more about ${service.title}`}>
                       Learn More <ArrowRight className="text-sm" />
                   </Link>
                 </div>
