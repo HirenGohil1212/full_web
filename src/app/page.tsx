@@ -2,34 +2,34 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Check, Verified } from 'lucide-react';
+import { Check, Verified, Smartphone, Globe, Bot, Code, Terminal, Cloud, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const services = [
   {
-    icon: 'smartphone',
+    icon: Smartphone,
     title: 'Mobile App Development',
     description: 'Native and cross-platform apps built with Flutter and React Native that engage users and perform flawlessly.'
   },
   {
-    icon: 'language',
+    icon: Globe,
     title: 'Web Development',
     description: 'Scalable, high-performance websites and web applications using modern frameworks like React and Next.js.'
   },
   {
-    icon: 'smart_toy',
+    icon: Bot,
     title: 'AI Agent Development',
     description: 'Next-gen automation and intelligence for your workflow using LLMs and custom AI agents.'
   }
 ];
 
 const techStack = [
-    { name: 'React', icon: 'code' },
-    { name: 'Flutter', icon: 'smartphone' },
-    { name: 'Python', icon: 'terminal' },
-    { name: 'AWS', icon: 'cloud' },
-    { name: 'OpenAI', icon: 'smart_toy' },
+    { name: 'React', icon: Code },
+    { name: 'Flutter', icon: Smartphone },
+    { name: 'Python', icon: Terminal },
+    { name: 'AWS', icon: Cloud },
+    { name: 'OpenAI', icon: Bot },
 ]
 
 export default function Home() {
@@ -76,12 +76,15 @@ export default function Home() {
           <div className="container flex flex-col md:flex-row items-center justify-center md:justify-between gap-6">
               <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">POWERED BY MODERN TECH</p>
               <div className="flex flex-wrap justify-center items-center gap-x-8 md:gap-x-12 gap-y-4 text-muted-foreground opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                  {techStack.map(tech => (
-                      <div key={tech.name} className="flex items-center gap-2 text-xl font-bold text-foreground">
-                          <span className="material-symbols-outlined">{tech.icon}</span>
-                          <span>{tech.name}</span>
-                      </div>
-                  ))}
+                  {techStack.map(tech => {
+                      const Icon = tech.icon;
+                      return (
+                        <div key={tech.name} className="flex items-center gap-2 text-xl font-bold text-foreground">
+                            <Icon />
+                            <span>{tech.name}</span>
+                        </div>
+                      )
+                  })}
               </div>
           </div>
       </section>
@@ -95,18 +98,21 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service, index) => (
-              <div key={index} className="group bg-card p-8 rounded-xl border shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                 <div className="size-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                    <span className="material-symbols-outlined text-3xl">{service.icon}</span>
-                 </div>
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed flex-grow">{service.description}</p>
-                 <Link href="/services" className="inline-flex items-center text-primary font-bold hover:underline gap-1 group-hover:gap-2 transition-all">
-                    Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                </Link>
-              </div>
-            ))}
+            {services.map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <div key={index} className="group bg-card p-8 rounded-xl border shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                   <div className="size-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                      <Icon className="text-3xl" />
+                   </div>
+                  <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                  <p className="text-muted-foreground mb-6 leading-relaxed flex-grow">{service.description}</p>
+                   <Link href="/services" className="inline-flex items-center text-primary font-bold hover:underline gap-1 group-hover:gap-2 transition-all">
+                      Learn More <ArrowRight className="text-sm" />
+                  </Link>
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>

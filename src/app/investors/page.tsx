@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ArrowRight, School, Network, Terminal, DollarSign, TrendingUp, Rocket } from "lucide-react";
+import { ArrowRight, School, Network, Terminal, DollarSign, TrendingUp, Rocket, Code, Smartphone, Cloud, BrainCircuit } from "lucide-react";
 
 export default function InvestorsPage() {
 
@@ -44,10 +44,10 @@ export default function InvestorsPage() {
                             <div className="flex items-center gap-4 mt-6 pt-6 border-t border-border w-full">
                                 <p className="text-sm font-medium text-muted-foreground">Trusted tech stack:</p>
                                 <div className="flex gap-4 opacity-60">
-                                    <span className="material-symbols-outlined" title="Code">code</span>
-                                    <span className="material-symbols-outlined" title="Smartphone">smartphone</span>
-                                    <span className="material-symbols-outlined" title="Cloud">cloud</span>
-                                    <span className="material-symbols-outlined" title="AI">psychology</span>
+                                    <Code title="Code" />
+                                    <Smartphone title="Smartphone" />
+                                    <Cloud title="Cloud" />
+                                    <BrainCircuit title="AI" />
                                 </div>
                             </div>
                         </div>
