@@ -1,9 +1,14 @@
-'use client';
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { ArrowRight, Leaf, BrainCircuit, Store, Droplets } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Our Startups',
+  description: "Explore the innovative startups incubated at Indicortex Solutions' innovation lab. Discover our internal ventures, like GrowKrishi, that are shaping the future of technology.",
+};
 
 const coreFeatures = [
     {

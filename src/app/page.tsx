@@ -1,10 +1,16 @@
-'use client';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Check, Verified, Smartphone, Globe, Bot, Code, Terminal, Cloud, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Indicortex Solutions LLP - AI, Web & Mobile Development',
+  description: 'Indicortex Solutions LLP empowers businesses through cutting-edge Mobile, Web, and AI development designed for scale and impact. We build the future with intelligent digital solutions.',
+};
+
 
 const services = [
   {

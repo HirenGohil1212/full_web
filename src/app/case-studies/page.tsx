@@ -2,6 +2,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Case Studies',
+  description: 'Explore in-depth case studies of our successful projects. See how Indicortex Solutions solves complex challenges for clients across various industries.',
+};
 
 export default function CaseStudiesPage() {
   return (

@@ -1,5 +1,3 @@
-
-'use client';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
@@ -7,6 +5,12 @@ import Link from 'next/link';
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Portfolio',
+  description: 'Explore the portfolio of Indicortex Solutions. See our work in mobile app development, web applications, AI, and more across various industries.',
+};
 
 const portfolioProjects = [
   {

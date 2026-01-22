@@ -1,8 +1,13 @@
-'use client';
 import ContactForm from "@/components/contact-form";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
 import Image from "next/image";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact Us',
+  description: "Let's build the future together. Reach out to Indicortex Solutions for a consultation on your AI, web, or mobile project. We're here to turn your vision into reality.",
+};
 
 export default function ContactPage() {
     return (

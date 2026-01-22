@@ -7,8 +7,56 @@ import { Toaster } from '@/components/ui/toaster';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Indicortex Solutions LLP',
-  description: 'Professional IT services and startup funding opportunities.',
+  metadataBase: new URL('https://www.indicortexsolutions.com'),
+  title: {
+    default: 'Indicortex Solutions LLP - AI, Web & Mobile Development',
+    template: '%s | Indicortex Solutions LLP',
+  },
+  description:
+    'Indicortex Solutions LLP delivers cutting-edge AI, web, and mobile app development services. We build scalable, intelligent software solutions to drive business growth.',
+  keywords: [
+    'AI development',
+    'web development',
+    'mobile app development',
+    'software solutions',
+    'startup funding',
+    'IT services',
+    'Indicortex',
+  ],
+  openGraph: {
+    title: 'Indicortex Solutions LLP - AI, Web & Mobile Development',
+    description:
+      'Pioneering intelligent digital solutions in AI, web, and mobile development to empower businesses worldwide.',
+    url: 'https://www.indicortexsolutions.com',
+    siteName: 'Indicortex Solutions LLP',
+    images: [
+      {
+        url: '/logo.png',
+        width: 32,
+        height: 32,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Indicortex Solutions LLP - AI, Web & Mobile Development',
+    description:
+      'Indicortex Solutions LLP delivers cutting-edge AI, web, and mobile app development services. We build scalable, intelligent software solutions to drive business growth.',
+    images: ['/logo.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -20,7 +68,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link rel="preconnect" href="https://embed.tawk.to" />
         <link rel="preconnect" href="https://va.tawk.to" />
       </head>

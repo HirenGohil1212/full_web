@@ -2,6 +2,12 @@ import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Rocket, Eye, ShieldCheck, Link, Mail } from "lucide-react";
 import Image from "next/image";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description: 'Learn about Indicortex Solutions LLP, our mission, vision, and the team driving our innovative software solutions. Discover our journey in architecting the digital future.',
+};
 
 const teamMembers = [
   {

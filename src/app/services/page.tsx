@@ -1,10 +1,15 @@
-'use client';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Smartphone, Code, Bot, Settings2, CloudCog, BrainCircuit, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Our Services',
+  description: 'Discover the core services offered by Indicortex Solutions, including mobile app development, web development, AI agent creation, managed IT services, and cloud solutions.',
+};
 
 const services = [
   {
