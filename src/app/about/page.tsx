@@ -80,7 +80,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="flex gap-4 z-10 mt-4">
-            <Button size="lg" className="h-12 px-8 bg-primary-light text-foreground font-bold hover:bg-white hover:text-primary">
+            <Button size="lg" className="h-12 px-8 bg-white text-primary font-bold hover:bg-gray-100">
                 View Our Services
             </Button>
           </div>
