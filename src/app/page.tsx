@@ -57,14 +57,17 @@ export default function Home() {
                 </Button>
                 </div>
             </div>
-            <div className="flex-1 w-full">
-                {heroImage && (
-                <div className="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-2xl shadow-2xl"
-                    style={{backgroundImage: `url(${heroImage.imageUrl})`}}
+            <div className="relative flex-1 w-full aspect-[4/3] rounded-2xl shadow-2xl overflow-hidden">
+              {heroImage && (
+                <Image
+                    src={heroImage.imageUrl}
+                    alt={heroImage.description}
                     data-ai-hint={heroImage.imageHint}
-                >
-                </div>
-                )}
+                    fill
+                    priority
+                    className="object-cover"
+                />
+              )}
             </div>
         </div>
       </section>
