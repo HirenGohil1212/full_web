@@ -148,7 +148,7 @@ export default function Home() {
             )}
           </div>
           <div className="flex flex-col gap-6">
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-primary w-fit">
+            <div className="inline-flex items-center gap-2 rounded-full bg-secondary px-3 py-1 text-primary w-fit">
               <Verified className="h-4 w-4" />
               <span className="text-xs font-bold uppercase tracking-wide">
                 Why Choose Us
@@ -169,7 +169,7 @@ export default function Home() {
                   <Check className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold">Agile Methodology</h4>
+                  <h3 className="font-bold">Agile Methodology</h3>
                   <p className="text-sm text-muted-foreground">
                     Rapid iteration and constant feedback loops.
                   </p>
@@ -180,7 +180,7 @@ export default function Home() {
                   <Check className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold">Future-Proof Tech</h4>
+                  <h3 className="font-bold">Future-Proof Tech</h3>
                   <p className="text-sm text-muted-foreground">
                     Built on modern stacks that scale with you.
                   </p>

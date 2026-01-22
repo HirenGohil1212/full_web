@@ -17,7 +17,7 @@ export default function Footer() {
             </div>
             <div className="md:col-start-3 flex flex-wrap gap-12">
               <div className="flex flex-col gap-3">
-                  <h4 className="text-sm font-bold uppercase tracking-wider">Services</h4>
+                  <h3 className="text-sm font-bold uppercase tracking-wider">Services</h3>
                   <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
                       <li><Link href="/services" className="hover:text-primary transition-colors">Mobile Apps</Link></li>
                       <li><Link href="/services" className="hover:text-primary transition-colors">Web Development</Link></li>
@@ -26,7 +26,7 @@ export default function Footer() {
                   </ul>
               </div>
               <div className="flex flex-col gap-3">
-                  <h4 className="text-sm font-bold uppercase tracking-wider">Company</h4>
+                  <h3 className="text-sm font-bold uppercase tracking-wider">Company</h3>
                   <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
                       <li><Link href="/about" className="hover:text-primary transition-colors">About</Link></li>
                       <li><Link href="/portfolio" className="hover:text-primary transition-colors">Portfolio</Link></li>
