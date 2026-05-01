@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Rocket, Eye, ShieldCheck, Link, Mail } from "lucide-react";
+import { Rocket, Eye, ShieldCheck, Mail, Linkedin, Instagram } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -14,6 +15,9 @@ const teamMembers = [
     name: "Hiren Gohil",
     role: "Founder & CEO",
     image: PlaceHolderImages.find((img) => img.id === "founder-ceo"),
+    linkedin: "https://www.linkedin.com/in/hirengohil12/",
+    instagram: "https://www.instagram.com/hirengohil.ceo/",
+    email: "mailto:hirengohil.ceo@indicortexsolutions.com"
   },
 ];
 
@@ -80,8 +84,8 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="flex gap-4 z-10 mt-4">
-            <Button size="lg" className="h-12 px-8 bg-white text-primary font-bold hover:bg-gray-100">
-                View Our Services
+            <Button asChild size="lg" className="h-12 px-8 bg-white text-primary font-bold hover:bg-gray-100">
+                <Link href="/services">View Our Services</Link>
             </Button>
           </div>
         </div>
@@ -186,9 +190,16 @@ export default function AboutPage() {
                          <div className="p-5 flex flex-col gap-2">
                             <h3 className="text-lg font-bold font-display">{member.name}</h3>
                             <p className="text-primary text-sm font-medium">{member.role}</p>
-                            <div className="flex gap-3 mt-2 text-gray-400">
-                                <Link className="cursor-pointer hover:text-primary" href="#"><Link className="h-5 w-5" /></Link>
-                                <Link className="cursor-pointer hover:text-primary" href="#"><Mail className="h-5 w-5" /></Link>
+                            <div className="flex gap-4 mt-3">
+                                <Link className="text-gray-400 hover:text-[#0077B5] transition-colors" href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                                    <Linkedin className="h-5 w-5" />
+                                </Link>
+                                <Link className="text-gray-400 hover:text-[#E4405F] transition-colors" href={member.instagram} target="_blank" rel="noopener noreferrer">
+                                    <Instagram className="h-5 w-5" />
+                                </Link>
+                                <Link className="text-gray-400 hover:text-primary transition-colors" href={member.email}>
+                                    <Mail className="h-5 w-5" />
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -204,8 +215,12 @@ export default function AboutPage() {
                   Whether you need a cutting-edge mobile app or an AI-powered agent, Indicortex is your partner in innovation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-                  <Button variant="outline" size="lg" className="bg-white text-primary hover:bg-gray-100 font-bold">Work With Us</Button>
-                  <Button variant="outline" size="lg" className="bg-transparent border-2 border-white hover:bg-white/10 text-white font-bold">Contact Sales</Button>
+                  <Button asChild variant="outline" size="lg" className="bg-white text-primary hover:bg-gray-100 font-bold">
+                    <Link href="/contact">Work With Us</Link>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="bg-transparent border-2 border-white hover:bg-white/10 text-white font-bold">
+                    <Link href="/contact">Contact Sales</Link>
+                  </Button>
               </div>
           </div>
       </section>
