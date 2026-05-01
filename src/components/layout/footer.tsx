@@ -15,6 +15,16 @@ export default function Footer() {
                 <p className="text-sm text-muted-foreground leading-relaxed">
                     Empowering businesses through cutting-edge digital solutions. We specialize in mobile apps, web development, and AI integration.
                 </p>
+                <div className="flex gap-4 mt-2">
+                    <Link href="https://www.linkedin.com/company/indicortex-solutions-llp/" className="text-muted-foreground hover:text-[#0077B5] transition-colors" target="_blank" rel="noopener noreferrer">
+                      <span className="sr-only">LinkedIn</span>
+                      <Linkedin className="h-5 w-5" />
+                    </Link>
+                    <Link href="https://www.instagram.com/indicortexsolutions.ai/" className="text-muted-foreground hover:text-[#E4405F] transition-colors" target="_blank" rel="noopener noreferrer">
+                      <span className="sr-only">Instagram</span>
+                      <Instagram className="h-5 w-5" />
+                    </Link>
+                </div>
             </div>
             <div className="md:col-start-3 flex flex-wrap gap-12">
               <div className="flex flex-col gap-3">
@@ -41,16 +51,6 @@ export default function Footer() {
              <p className="text-xs text-muted-foreground">
                 © {new Date().getFullYear()} Indicortex Solutions LLP. All rights reserved.
             </p>
-            <div className="flex gap-6">
-                <Link href="https://www.linkedin.com/company/indicortex-solutions-llp/" className="text-muted-foreground hover:text-[#0077B5] transition-colors" target="_blank" rel="noopener noreferrer">
-                  <span className="sr-only">LinkedIn</span>
-                  <Linkedin className="h-5 w-5" />
-                </Link>
-                <Link href="https://www.instagram.com/indicortexsolutions.ai/" className="text-muted-foreground hover:text-[#E4405F] transition-colors" target="_blank" rel="noopener noreferrer">
-                  <span className="sr-only">Instagram</span>
-                  <Instagram className="h-5 w-5" />
-                </Link>
-            </div>
         </div>
       </div>
     </footer>
