@@ -40,7 +40,7 @@ export default function InvestorForm() {
                         </Button>
                     </div>
                     <p className="text-sm text-muted-foreground mt-4">
-                        Prefer to email us directly? <a className="text-primary font-bold hover:underline" href="mailto:invest@indicortex.com">invest@indicortex.com</a>
+                        Prefer to email us directly? <a className="text-primary font-bold hover:underline" href="mailto:hirengohil.indicortex@gmail.com">hirengohil.indicortex@gmail.com</a>
                     </p>
                 </div>
             </div>
