@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/button";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'Explore the portfolio of Indicortex Solutions. See our work in mobile app development, web applications, AI, and more across various industries.',
+  title: 'Portfolio | Innovative AI, Web & Mobile Projects',
+  description: 'Explore the portfolio of Indicortex Solutions. See our work in mobile app development, high-performance web applications, and intelligent AI agents.',
 };
 
 const portfolioProjects = [
@@ -17,6 +17,7 @@ const portfolioProjects = [
     title: "Dune Shisha SMM",
     description: "Comprehensive social media marketing strategy and analytics dashboard for a luxury lounge brand.",
     category: "Marketing",
+    slug: "dune-shisha-smm",
     imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCWAPjr8rSasfEzt9DAa-SWrxTtiRhOJLJZvYyf2drVp5mVhKmQAFV7hM5MDjsQQl8m_mqcoqj4V2MnYeiHnBkLWWX4yWlk_Mb8u0ZFwEJ6qQ2arbl8EvVs3QaXb8AK8b5yB_B-QBw1hb7fmgArtGylaJLdq77jHvdWfbFuzwyHvIP9h03DhIW3KZS2kaAUFHPYtKFATJP62-ULhqa-qCVHAacsd1Bqozlowsrgvt0ON3MxpH0ox-3ILYQ7ID6oZIzhR5wk2nAoXp4",
     imageHint: "social media analytics",
   },
@@ -24,6 +25,7 @@ const portfolioProjects = [
     title: "The Match Live",
     description: "High-performance sports streaming platform delivering real-time stats and low-latency video.",
     category: "Web App",
+    slug: "the-match-live",
     imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBCEtYZMmaa2L_YE9m2qb2IoAda299FZ8HoBuS4I-bA-IIYF40ZLx4SRRMzIM7hRHh2U7apR1zRhsA5emK6rkhbJuvwf7sG_8fcs_Gk0OiVW6Vy9OLfmY7VP7EC8pz_kaA6Hp69FTsVBFAtUSxROZJUlA5AS3ntwTf7PO4IGt91JidxoKR0eKH2K_cB-L-kYDUGWBUj69HZMMWVgtrRFWRTwrANRn17JL3z86q9o_Ji6W2oZQfHrDpuiNn2heVeC_6QRqFk7ZesXB0",
     imageHint: "sports streaming",
   },
@@ -31,6 +33,7 @@ const portfolioProjects = [
     title: "Pinakin Prayaan",
     description: "End-to-end travel and logistics solution for booking, tracking, and itinerary management.",
     category: "Travel",
+    slug: "pinakin-prayaan",
     imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCFwietv0flvD-GQxlJHMfPi6VBVbyHacqVYHd5dzODD7W3COXTwnKSScyeN4fPqHoPOzkVTr0KYO00xQVsXpTd44XM5snmpHANOsuUGTHLyhiI_mO4yMyBOFnOqSjWysKOlH7l39pLcuw57at6xpNyrHwYA40shfUEukzUJHkguqIcxzjXhrkPGRZ99cMsyRvY0RY6R5PGYLVssvPpcmp6wSCSgzBIw2g_zygZPP5ezj8yESamCm3V-z11nUAsa6zenYhS2rIngC8",
     imageHint: "travel app",
   },
@@ -100,15 +103,6 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <section className="container py-4">
-        <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-          <Button>All</Button>
-          <Button variant="secondary">Mobile Apps</Button>
-          <Button variant="secondary">Web Development</Button>
-          <Button variant="secondary">AI Agents</Button>
-        </div>
-      </section>
-
       <section className="container py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioProjects.map((project, index) => (
@@ -134,7 +128,7 @@ export default function PortfolioPage() {
                   </p>
                 </div>
                 <div className="mt-auto pt-4">
-                  <Link href="/case-studies" className="inline-flex items-center text-primary text-sm font-bold hover:underline gap-1 group-hover:text-primary-dark">
+                  <Link href={project.slug ? `/case-studies/${project.slug}` : "/case-studies"} className="inline-flex items-center text-primary text-sm font-bold hover:underline gap-1 group-hover:text-primary-dark">
                     View Case Study <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
