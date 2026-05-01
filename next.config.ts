@@ -2,11 +2,11 @@ import type {NextConfig} from 'next';
 
 const cspHeader = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' https://embed.tawk.to https://va.tawk.to https://www.google-analytics.com https://ssl.google-analytics.com;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: https://embed.tawk.to https://va.tawk.to https://www.google-analytics.com https://ssl.google-analytics.com;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://embed.tawk.to;
     font-src 'self' https://fonts.gstatic.com https://embed.tawk.to;
-    img-src 'self' blob: data: https://images.unsplash.com https://picsum.photos https://lh3.googleusercontent.com https://placehold.co https://embed.tawk.to;
-    connect-src 'self' https://va.tawk.to https://embed.tawk.to https://www.google-analytics.com;
+    img-src 'self' blob: data: https://images.unsplash.com https://picsum.photos https://lh3.googleusercontent.com https://placehold.co https://embed.tawk.to https://*.tawk.to;
+    connect-src 'self' https://va.tawk.to https://embed.tawk.to https://www.google-analytics.com wss://*.tawk.to;
     frame-src 'self' https://embed.tawk.to;
     upgrade-insecure-requests;
 `;
