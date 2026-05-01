@@ -41,6 +41,7 @@ const portfolioProjects = [
     title: "Balance Astro Vastu",
     description: "Web application connecting users with astrology and Vastu consultants via video and chat.",
     category: "Consultancy",
+    slug: "balance-astro-vastu",
     imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjcV_ly2-6rP_MJdPdfrDbYjrEVV5F-EKIjyWkI5djpu8LI6a7OklIobyGQKF3R_zFW8KIg5Zkb7VRqjtzIIig2xGkMs2ifJV2hyv7XGTN78OdHgz_Podmsc2aeWzT9AoKDBPXzAFIZ6IzxRqK9FBYpU9xuhNYSK_h0j24_pWrTcpydlqK53HGR-mv3-P_1VYisDsxjPq6bLU4d3DMcx-bkztQc9_UIlZfVWQoocTUWbFPcBNEM_77dK2fskLZvk3lTWQIObCFbuk",
     imageHint: "astrology chart",
   },
@@ -48,6 +49,7 @@ const portfolioProjects = [
     title: "Pure Planet Recycling",
     description: "Tech platform streamlining waste management and recycling processes for businesses.",
     category: "Sustainability",
+    slug: "pure-planet-recycling",
     imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCvza2w5Bbju5MQwyFocU-7uhYsGsOMhHC1Oo6HkDHV-cBNOqUV7eS4s6k1GvqYb0q-1eT7ehPIFZ_wZRlHQ7XKYOQim-LCDUTzFMFB5BcZ8bPXowshFpUv2lz2pGvYp7_VTkBUGYbIe7QO_keK1dFSCjtiOhyT46URdirr3xMWHP-1PQGP-d3SyDCqYgnUQgHLqr2OwPaIq2T1nG__Lf_sAiw-CmZdiJjbGEfu0xbvqxHUnbUh7JsDVEmTZzr3TX0h6gTx083UyPc",
     imageHint: "recycling plant",
   },
@@ -55,13 +57,15 @@ const portfolioProjects = [
     title: "aTown",
     description: "Hyper-local community engagement app fostering neighborhood connections and events.",
     category: "Community",
+    slug: "atown",
     imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDARGUzmFzvctw7wq1uSopvHN40G-MYi44RNkmlhYg3M5XIq8eK5kuhUrzR6lenI1O6BOqjF1zKvV38ulB93zhljL_dC0wYGNimxG8HKnd-m4X1qvKaildM57_bN8KQxnXR53RjFgVY5aBdD1cxWrma_D-UdcIUhnrjz8jXAsswhuRn4pOR4fcZN40w2qGV0G9T1OgTB-vW2CbFt8BRMq-w_RLnuUpG5NJ-4s-0NjpwxYJZQONwCa0llt3aRqGIW0bVt5O_lYJS4y4",
     imageHint: "small town",
   },
-    {
+  {
     title: "Catering Idea",
     description: "Integrated management system for catering businesses to handle orders and inventory.",
     category: "Food Tech",
+    slug: "catering-idea",
     imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBPF3Cv9AhUpeuUlnBpfYRO9kcQG078lX3aLxqN1zPAFi-q1652QKISa2AJiVXZgquzhi2tzI00q_S80s6x-ZzVM-keHFRVa4BFzjKk1eDBpIDUf7PWi_ktqi0bo-M8fOlLEk5E-RHG2INAGf2kWcTm-dU85oKt6DRmmZ96KEkxTa_o-7apjfkZj3afKVOVP3ssLzAsTfNKnFtq5Ldsw4dLG4j0A0gpfW9E73cDdoeyf11BGPMA64LMRGYZ1-iL2tyhoWXEdNSo_qA",
     imageHint: "catering food",
   },
@@ -69,6 +73,7 @@ const portfolioProjects = [
     title: "Mediclock Healthcare",
     description: "Mobile application for patient appointment scheduling and medication reminders.",
     category: "HealthTech",
+    slug: "mediclock-healthcare",
     imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuAsaxn3tpfO7j_zTE4Y1vgSR1KZhnwHHu8fBI-unrj8FHUbR5jY0onbhjqXepNy86FV-VfV7zwsw-1Umq_JtqQbN5Yr69zjpPFBv-WjKanPJ4ixg2UMTA3DqTmd_JgTAlaMl5tCdRIIsd4vp0Sos627ShqLjvHMiAxi66OWAfZjetTRP5TID_WG6cwu_DE0e-69oKYDkYCcSu8siFRI9LcHRUrWJwCFBM8pzfI0auV8AeFTt0XmL7A1K43yGU9ZoecUpIcHUADc8mU",
     imageHint: "hospital reception",
   },
@@ -128,7 +133,7 @@ export default function PortfolioPage() {
                   </p>
                 </div>
                 <div className="mt-auto pt-4">
-                  <Link href={project.slug ? `/case-studies/${project.slug}` : "/case-studies"} className="inline-flex items-center text-primary text-sm font-bold hover:underline gap-1 group-hover:text-primary-dark">
+                  <Link href={`/case-studies/${project.slug}`} className="inline-flex items-center text-primary text-sm font-bold hover:underline gap-1 group-hover:text-primary-dark">
                     View Case Study <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
