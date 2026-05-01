@@ -116,7 +116,7 @@ export default function ServicesPage() {
               const Icon = service.icon;
               return (
                 <div key={index} className="group flex flex-col gap-0 rounded-xl bg-card text-card-foreground shadow-sm border overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1 hover:border-primary/20">
-                    <div className="h-48 w-full bg-cover bg-center relative">
+                    <div className="h-48 w-full relative">
                       <Image 
                           src={service.image.src}
                           alt={service.title}

@@ -37,19 +37,19 @@ const pillars = [
 
 const journey = [
     {
-        year: "2020",
-        title: "Inception",
-        description: "Indicortex Solutions LLP was founded with a vision to bridge the gap between complex technology and business needs."
-    },
-    {
-        year: "2022",
-        title: "Mobile Expansion",
-        description: "Expanded our service portfolio to include native mobile app development, securing our first Fortune 500 client."
-    },
-    {
         year: "2024",
-        title: "AI Division Launch",
-        description: "Launched a dedicated AI research and development wing to build autonomous agents and predictive models."
+        title: "Freelancing Mastery",
+        description: "We dedicated this year to delivering high-quality freelance software projects, building a reputation for excellence and reliability."
+    },
+    {
+        year: "2025",
+        title: "Official Launch & GrowKrishi",
+        description: "Officially started our venture, launched our full service suite, and conceived our flagship agritech idea, GrowKrishi."
+    },
+    {
+        year: "2026",
+        title: "GTU Ventures Selection",
+        description: "Our GrowKrishi innovation reached a major milestone by being selected into the prestigious GTU Ventures incubator program."
     }
 ]
 
@@ -141,7 +141,7 @@ export default function AboutPage() {
         <div className="container px-6 lg:px-10">
             <div className="mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold font-display leading-tight tracking-[-0.02em] mb-4">Our Journey</h2>
-                <p className="text-muted-foreground text-lg">From a small startup to a global IT solutions provider.</p>
+                <p className="text-muted-foreground text-lg">Our evolution from high-performing freelancers to an innovative venture studio.</p>
             </div>
             <div className="relative">
                 <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-border"></div>
