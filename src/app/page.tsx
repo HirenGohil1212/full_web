@@ -126,39 +126,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Portfolio Highlight */}
-      <section id="portfolio-preview" className="py-20 bg-muted/30">
+      {/* Case Studies Highlight */}
+      <section id="case-studies-preview" className="py-20 bg-muted/30">
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-12">
             <div className="max-w-2xl text-center md:text-left">
-              <h2 className="text-3xl md:text-4xl font-bold leading-tight">Recent Success Stories</h2>
+              <h2 className="text-3xl md:text-4xl font-bold leading-tight">Success Stories</h2>
               <p className="mt-4 text-muted-foreground text-lg">
-                Explore our diverse portfolio of digital transformations across various industries.
+                Discover how we've helped businesses transform their operations and achieve measurable growth.
               </p>
             </div>
             <Button asChild variant="outline">
-              <Link href="/portfolio">View All Projects <ArrowRight className="ml-2 h-4 w-4" /></Link>
+              <Link href="/case-studies">Read All Case Studies <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
           </div>
-          <div className="grid gap-8 md:grid-cols-2">
-            <div className="group relative overflow-hidden rounded-2xl bg-card border shadow-md hover:shadow-xl transition-all">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="group relative overflow-hidden rounded-2xl bg-card border shadow-md hover:shadow-xl transition-all flex flex-col">
                 <div className="aspect-video relative">
                   <Image src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWAPjr8rSasfEzt9DAa-SWrxTtiRhOJLJZvYyf2drVp5mVhKmQAFV7hM5MDjsQQl8m_mqcoqj4V2MnYeiHnBkLWWX4yWlk_Mb8u0ZFwEJ6qQ2arbl8EvVs3QaXb8AK8b5yB_B-QBw1hb7fmgArtGylaJLdq77jHvdWfbFuzwyHvIP9h03DhIW3KZS2kaAUFHPYtKFATJP62-ULhqa-qCVHAacsd1Bqozlowsrgvt0ON3MxpH0ox-3ILYQ7ID6oZIzhR5wk2nAoXp4" alt="Dune Shisha" fill className="object-cover group-hover:scale-105 transition-transform duration-500" data-ai-hint="social media dashboard" />
                 </div>
-                <div className="p-6">
-                  <Badge className="mb-2">Marketing</Badge>
+                <div className="p-6 flex flex-col flex-1">
+                  <Badge className="mb-2 w-fit">Marketing</Badge>
                   <h3 className="text-xl font-bold">Dune Shisha SMM</h3>
-                  <p className="text-muted-foreground mt-2">Comprehensive analytics and social media strategy for luxury brands.</p>
+                  <p className="text-muted-foreground mt-2 mb-6 flex-1 text-sm">300% increase in monthly social engagement and 45% growth in reservations.</p>
+                  <Link href="/case-studies/dune-shisha-smm" className="text-primary font-bold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                    View Case Study <ArrowRight className="size-4" />
+                  </Link>
                 </div>
             </div>
-             <div className="group relative overflow-hidden rounded-2xl bg-card border shadow-md hover:shadow-xl transition-all">
+             <div className="group relative overflow-hidden rounded-2xl bg-card border shadow-md hover:shadow-xl transition-all flex flex-col">
+                <div className="aspect-video relative">
+                   <Image src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCEtYZMmaa2L_YE9m2qb2IoAda299FZ8HoBuS4I-bA-IIYF40ZLx4SRRMzIM7hRHh2U7apR1zRhsA5emK6rkhbJuvwf7sG_8fcs_Gk0OiVW6Vy9OLfmY7VP7EC8pz_kaA6Hp69FTsVBFAtUSxROZJUlA5AS3ntwTf7PO4IGt91JidxoKR0eKH2K_cB-L-kYDUGWBUj69HZMMWVgtrRFWRTwrANRn17JL3z86q9o_Ji6W2oZQfHrDpuiNn2heVeC_6QRqFk7ZesXB0" alt="Live Streaming" fill className="object-cover group-hover:scale-105 transition-transform duration-500" data-ai-hint="streaming dashboard" />
+                </div>
+                <div className="p-6 flex flex-col flex-1">
+                  <Badge className="mb-2 w-fit">Web App</Badge>
+                  <h3 className="text-xl font-bold">The Match Live</h3>
+                  <p className="text-muted-foreground mt-2 mb-6 flex-1 text-sm">Sub-1.5 second global latency achieved for over 55,000 concurrent viewers.</p>
+                  <Link href="/case-studies/the-match-live" className="text-primary font-bold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                    View Case Study <ArrowRight className="size-4" />
+                  </Link>
+                </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-2xl bg-card border shadow-md hover:shadow-xl transition-all flex flex-col">
                 <div className="aspect-video relative">
                    <Image src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFwietv0flvD-GQxlJHMfPi6VBVbyHacqVYHd5dzODD7W3COXTwnKSScyeN4fPqHoPOzkVTr0KYO00xQVsXpTd44XM5snmpHANOsuUGTHLyhiI_mO4yMyBOFnOqSjWysKOlH7l39pLcuw57at6xpNyrHwYA40shfUEukzUJHkguqIcxzjXhrkPGRZ99cMsyRvY0RY6R5PGYLVssvPpcmp6wSCSgzBIw2g_zygZPP5ezj8yESamCm3V-z11nUAsa6zenYhS2rIngC8" alt="Travel App" fill className="object-cover group-hover:scale-105 transition-transform duration-500" data-ai-hint="travel planning app" />
                 </div>
-                <div className="p-6">
-                  <Badge className="mb-2">Travel</Badge>
+                <div className="p-6 flex flex-col flex-1">
+                  <Badge className="mb-2 w-fit">Travel</Badge>
                   <h3 className="text-xl font-bold">Pinakin Prayaan</h3>
-                  <p className="text-muted-foreground mt-2">End-to-end logistics and itinerary management solution.</p>
+                  <p className="text-muted-foreground mt-2 mb-6 flex-1 text-sm">60% reduction in manual dispatch overhead with real-time GPS integration.</p>
+                  <Link href="/case-studies/pinakin-prayaan" className="text-primary font-bold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                    View Case Study <ArrowRight className="size-4" />
+                  </Link>
                 </div>
             </div>
           </div>
