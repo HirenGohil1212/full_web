@@ -308,17 +308,46 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final Global CTA */}
-      <section id="cta" className="py-32 relative overflow-hidden bg-background">
-        <div className="absolute bottom-0 left-0 -ml-20 -mb-20 size-[700px] bg-primary/5 rounded-full blur-[120px]"></div>
-        <div className="relative z-10 container text-center flex flex-col items-center gap-12">
-          <h2 className="text-5xl md:text-8xl font-black tracking-tight leading-[1.1]">Ready to transform <br /> your business?</h2>
-          <p className="text-2xl text-muted-foreground max-w-3xl font-medium">
-            Let's discuss how our expertise in AI, Mobile, and Web can help you reach your goals.
-          </p>
-          <Button asChild size="lg" className="rounded-full h-18 px-16 text-2xl font-bold hover:scale-105 transition-all shadow-2xl bg-foreground text-background hover:bg-foreground/80">
-            <Link href="/contact">Start Your Project</Link>
-          </Button>
+      {/* Final Global CTA - Immersive Redesign */}
+      <section id="cta" className="py-24 md:py-32 relative overflow-hidden bg-foreground text-background">
+        {/* Futuristic Background Accents */}
+        <div className="absolute top-0 right-0 -mr-40 -mt-40 size-[600px] bg-primary/20 rounded-full blur-[140px] pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 -ml-40 -mb-40 size-[600px] bg-accent/10 rounded-full blur-[140px] pointer-events-none"></div>
+        
+        <div className="container relative z-10">
+          <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
+            <div className="mb-8 animate-in fade-in duration-700">
+               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary-light text-xs font-black uppercase tracking-[0.3em]">
+                 The Next Step
+               </div>
+            </div>
+            
+            <h2 className="text-5xl md:text-7xl lg:text-9xl font-black tracking-tighter leading-[0.9] mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+              Ready to <br /> 
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-green-400">
+                Transform?
+              </span>
+            </h2>
+            
+            <p className="text-lg md:text-2xl text-slate-300 max-w-2xl mb-12 font-medium leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-700">
+              Let's discuss how our expertise in AI, Mobile, and Web can help you reach your goals and scale your vision.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto animate-in fade-in slide-in-from-bottom-8 duration-700">
+               <Button asChild size="lg" className="h-16 md:h-20 px-12 md:px-16 text-xl md:text-2xl rounded-full bg-primary text-primary-foreground hover:scale-105 transition-all font-bold shadow-[0_0_50px_rgba(56,124,43,0.4)]">
+                <Link href="/contact">Start Your Project</Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="h-16 md:h-20 px-12 md:px-16 text-xl md:text-2xl rounded-full border-2 border-white/20 bg-white/5 backdrop-blur-sm text-white hover:bg-white/10 transition-all font-bold">
+                <Link href="/contact">Book a Call</Link>
+              </Button>
+            </div>
+            
+            <div className="mt-16 flex items-center gap-8 opacity-40 animate-in fade-in duration-1000">
+                <p className="text-sm font-bold tracking-widest uppercase">Global Delivery</p>
+                <div className="h-px w-12 bg-white"></div>
+                <p className="text-sm font-bold tracking-widest uppercase">24/7 Support</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
