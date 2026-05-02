@@ -17,7 +17,7 @@ const services = [
     title: "Mobile App Development",
     description: "Crafting intuitive and high-performing mobile applications for both iOS and Android platforms, tailored to your business goals.",
     image: {
-      src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBrZjyJH4wQhrLZShfCm-IOLhw7R6d724YDXv91X7UoijxrOwpu7KkbcnRBSnbFwjuXnQ7jKjepvhRivQcdNMoSSPjC3SnVmJyCm5YgKiesyinq0yx5C0Y9Q-s-L-_hjTRlU25n2o-J0iwfiAaHxFRdvk_fUtSFuSIE0oQtFV_GxKj2c_GN_5HGcL7iMmqKBM5Msb-1nreysOotY0oCfq_NtedG6r7TbUl9-Mvmq8kM680bbd6dbaXOzIxIp3QTvHL6twoYt0zS0rE",
+      src: "/mobile_app.jpg",
       hint: "mobile showcase"
     }
   },
@@ -26,7 +26,7 @@ const services = [
     title: "Web Development",
     description: "Building responsive, scalable, and secure web solutions, from simple websites to complex enterprise applications.",
     image: {
-      src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBR0LsYLVeLdE-f7zJ8atxOpEDcaXkZfekrpOrFU88ovgCR0ULZL_Aowv4G7o0CtCcHqZIJ4M_tvSs-F2wQeQAPFN2WJ3UPEYIk3wcL0BkILcywsdMNWexhbdomsORlwMzIqMZiwmwabIPi0mOCAC1CbSvI7M0_b7pVlX05TsN_SvuzFBolb5TF3pGoxOeTZLX8ym2gINsdhkcwaHkhPQs74mDOuoZBebUKc0354Dyp-d1_1v6fBCov_juoltch2zcbcydXfqEB9AE",
+      src: "/web_dev.jpg",
       hint: "code show"
     }
   },
@@ -35,7 +35,7 @@ const services = [
     title: "AI Agent Development",
     description: "Developing intelligent AI agents and chatbots to automate tasks, improve customer service, and enhance user engagement.",
     image: {
-      src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCYRt2Rgntk6owDyXlrz0OTxRb8XqVkjkJySv8emDrpO2wN_1kNfCtgQ00yzZXyM17AQ5E4zDvgtrFN1H94sBeA4i8P52dDfoldvBZ2wXpEO5IDXgS0YYPrdqBXdooHnsbOrUEKmMP57eMeod06NtlW8DFZLZFQ9vZakWMdt3TfKYa_haidENjNSYJ3XJzzCMHPAZ1TMQcGP8Mg5MNmTN1MhJQxJ-RYxq3QFXryglx_xiMUpdwaeBSFyGE4-T7WMnSZcPrrE2ROF5Q",
+      src: "/ai_agent.jpg",
       hint: "ai workflow"
     }
   },
@@ -44,7 +44,7 @@ const services = [
     title: "Managed IT Services",
     description: "Focus on your core business while we handle your IT. Our managed services cover everything from helpdesk support to network management and strategic IT consulting.",
     image: {
-        src: "https://picsum.photos/seed/serverroom/600/400",
+        src: "/it_service.jpg",
         hint: "office setup"
     }
   },
@@ -53,7 +53,7 @@ const services = [
     title: "Cloud Solutions",
     description: "Leverage the power of the cloud with our bespoke solutions. We offer migration, management, and optimization services for major cloud platforms.",
     image: {
-        src: "https://picsum.photos/seed/clouddatacenter/600/400",
+        src: "/cloud_sol.jpg",
         hint: "cloud server"
     }
   },
@@ -62,7 +62,7 @@ const services = [
     title: "AI & Machine Learning",
     description: "Integrate artificial intelligence into your operations. We develop and deploy AI-driven solutions to automate processes and enhance decision-making.",
     image: {
-        src: "https://picsum.photos/seed/ainetwork/600/400",
+        src: "/ml.jpg",
         hint: "ai code"
     }
   },
