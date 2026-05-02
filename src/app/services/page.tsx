@@ -3,16 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Smartphone, Code, Bot, Settings2, CloudCog, BrainCircuit, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Our Services',
-  description: 'Discover the core services offered by Indicortex Solutions, including mobile app development, web development, AI agent creation, managed IT services, and cloud solutions.',
+  title: 'Our Services | Professional AI, Web & Mobile Development',
+  description: 'Explore the core services offered by Indicortex Solutions, including mobile app development, high-performance web applications, and enterprise AI agent creation.',
 };
 
 const services = [
   {
+    slug: "mobile-app-development",
     icon: Smartphone,
     title: "Mobile App Development",
     description: "Crafting intuitive and high-performing mobile applications for both iOS and Android platforms, tailored to your business goals.",
@@ -22,6 +22,7 @@ const services = [
     }
   },
   {
+    slug: "web-development",
     icon: Code,
     title: "Web Development",
     description: "Building responsive, scalable, and secure web solutions, from simple websites to complex enterprise applications.",
@@ -31,6 +32,7 @@ const services = [
     }
   },
   {
+    slug: "ai-agent-development",
     icon: Bot,
     title: "AI Agent Development",
     description: "Developing intelligent AI agents and chatbots to automate tasks, improve customer service, and enhance user engagement.",
@@ -40,15 +42,17 @@ const services = [
     }
   },
   {
+    slug: "managed-it-services",
     icon: Settings2,
     title: "Managed IT Services",
-    description: "Focus on your core business while we handle your IT. Our managed services cover everything from helpdesk support to network management and strategic IT consulting.",
+    description: "Focus on your core business while we handle your IT. Our managed services cover everything from helpdesk support to strategic IT consulting.",
     image: {
         src: "/it_service.jpg",
         hint: "office setup"
     }
   },
   {
+    slug: "cloud-solutions",
     icon: CloudCog,
     title: "Cloud Solutions",
     description: "Leverage the power of the cloud with our bespoke solutions. We offer migration, management, and optimization services for major cloud platforms.",
@@ -58,6 +62,7 @@ const services = [
     }
   },
   {
+    slug: "ai-and-machine-learning",
     icon: BrainCircuit,
     title: "AI & Machine Learning",
     description: "Integrate artificial intelligence into your operations. We develop and deploy AI-driven solutions to automate processes and enhance decision-making.",
@@ -137,10 +142,10 @@ export default function ServicesPage() {
                           {service.description}
                         </p>
                       </div>
-                      <div className="mt-auto pt-4 flex items-center text-primary font-bold text-sm cursor-pointer group/link">
+                      <Link href={`/services/${service.slug}`} className="mt-auto pt-4 flex items-center text-primary font-bold text-sm group/link">
                         <span className="mr-2">Learn more</span>
                         <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
-                      </div>
+                      </Link>
                     </div>
                 </div>
               );

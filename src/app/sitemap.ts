@@ -3,6 +3,15 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.indicortexsolutions.com';
 
+  const services = [
+    'mobile-app-development',
+    'web-development',
+    'ai-agent-development',
+    'managed-it-services',
+    'cloud-solutions',
+    'ai-and-machine-learning',
+  ];
+
   const pages = [
     '/',
     '/services',
@@ -14,12 +23,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/case-studies',
   ];
 
-  const sitemap = pages.map((page) => ({
+  const staticSitemap = pages.map((page) => ({
     url: `${baseUrl}${page}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: page === '/' ? 1 : 0.8,
   }));
 
-  return sitemap;
+  const serviceSitemap = services.map((slug) => ({
+    url: `${baseUrl}/services/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  return [...staticSitemap, ...serviceSitemap];
 }
