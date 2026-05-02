@@ -45,14 +45,14 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       {/* High-Impact Centered Hero Section */}
-      <section className="relative w-full pt-16 pb-24 md:pt-24 md:pb-40 overflow-hidden bg-background border-b flex items-center justify-center min-h-[85vh]">
+      <section className="relative w-full pt-8 pb-12 md:pt-12 md:pb-20 overflow-hidden bg-background border-b flex items-center justify-center min-h-[75vh] md:min-h-[85vh]">
         {/* Immersive Background Glows */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl h-[700px] bg-primary/10 rounded-full blur-[140px] pointer-events-none -z-10 opacity-70"></div>
         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.03] pointer-events-none"></div>
         
         <div className="container relative z-10 flex flex-col items-center text-center">
           {/* Highlighted Tagline */}
-          <div className="mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <div className="mb-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
              <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-primary/20 bg-primary/5 backdrop-blur-sm">
                 <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
                 <span className="text-primary font-black text-xs md:text-sm tracking-[0.4em] uppercase">
@@ -61,29 +61,29 @@ export default function Home() {
              </div>
           </div>
           
-          <h1 className="text-5xl md:text-8xl lg:text-9xl font-black leading-[0.9] tracking-tighter mb-10 max-w-[1300px] animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200">
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-tighter mb-6 max-w-[1300px] animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200">
             Architecting the <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary via-green-600 to-accent">Digital Future</span> with Intelligent Solutions
           </h1>
           
-          <p className="text-lg md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-14 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500 font-medium">
+          <p className="text-base md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-8 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500 font-medium px-4">
             Empowering global businesses through cutting-edge Mobile, Web, and AI development designed for massive impact and seamless scale.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center w-full sm:w-auto animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-700">
-            <Button asChild size="lg" className="h-16 px-12 text-xl rounded-full shadow-[0_20px_50px_rgba(56,124,43,0.3)] hover:scale-105 transition-all font-bold">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-700">
+            <Button asChild size="lg" className="h-14 px-10 text-lg rounded-full shadow-[0_20px_50px_rgba(56,124,43,0.3)] hover:scale-105 transition-all font-bold">
               <Link href="/portfolio">Our Portfolio</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="h-16 px-12 text-xl rounded-full hover:bg-primary/5 transition-all border-2 font-bold">
+            <Button asChild size="lg" variant="outline" className="h-14 px-10 text-lg rounded-full hover:bg-primary/5 transition-all border-2 font-bold">
               <Link href="/contact">Get Started</Link>
             </Button>
           </div>
           
           {/* Modern Tech Stack Indicator */}
-          <div className="mt-28 w-full max-w-4xl animate-in fade-in duration-1000 delay-1000">
-             <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-30 hover:opacity-100 transition-opacity duration-500">
+          <div className="mt-16 md:mt-24 w-full max-w-4xl animate-in fade-in duration-1000 delay-1000">
+             <div className="flex flex-wrap justify-center gap-6 md:gap-12 opacity-30 hover:opacity-100 transition-opacity duration-500">
                 {techStack.map((tech) => (
-                    <div key={tech.name} className="flex items-center gap-2 text-sm font-bold tracking-widest text-foreground uppercase">
-                        <tech.icon className="size-5 text-primary" />
+                    <div key={tech.name} className="flex items-center gap-2 text-xs font-bold tracking-widest text-foreground uppercase">
+                        <tech.icon className="size-4 text-primary" />
                         <span>{tech.name}</span>
                     </div>
                 ))}
