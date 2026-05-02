@@ -61,26 +61,26 @@ export default function Home() {
              </div>
           </div>
           
-          <h1 className="text-4xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-tighter mb-6 max-w-[1300px] animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tighter mb-6 max-w-[1100px] animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200">
             Architecting the <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary via-green-600 to-accent">Digital Future</span> with Intelligent Solutions
           </h1>
           
-          <p className="text-base md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-8 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500 font-medium px-4">
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-8 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500 font-medium px-4">
             Empowering global businesses through cutting-edge Mobile, Web, and AI development designed for massive impact and seamless scale.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-700">
-            <Button asChild size="lg" className="h-14 px-10 text-lg rounded-full shadow-[0_20px_50px_rgba(56,124,43,0.3)] hover:scale-105 transition-all font-bold">
+            <Button asChild size="lg" className="h-12 px-10 text-base rounded-full shadow-[0_20px_50px_rgba(56,124,43,0.3)] hover:scale-105 transition-all font-bold">
               <Link href="/portfolio">Our Portfolio</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="h-14 px-10 text-lg rounded-full hover:bg-primary/5 transition-all border-2 font-bold">
+            <Button asChild size="lg" variant="outline" className="h-12 px-10 text-base rounded-full hover:bg-primary/5 transition-all border-2 font-bold">
               <Link href="/contact">Get Started</Link>
             </Button>
           </div>
           
           {/* Modern Tech Stack Indicator */}
-          <div className="mt-16 md:mt-24 w-full max-w-4xl animate-in fade-in duration-1000 delay-1000">
-             <div className="flex flex-wrap justify-center gap-6 md:gap-12 opacity-30 hover:opacity-100 transition-opacity duration-500">
+          <div className="mt-12 md:mt-20 w-full max-w-4xl animate-in fade-in duration-1000 delay-1000">
+             <div className="flex flex-wrap justify-center gap-6 md:gap-10 opacity-30 hover:opacity-100 transition-opacity duration-500">
                 {techStack.map((tech) => (
                     <div key={tech.name} className="flex items-center gap-2 text-xs font-bold tracking-widest text-foreground uppercase">
                         <tech.icon className="size-4 text-primary" />
@@ -301,7 +301,7 @@ export default function Home() {
                 <Button asChild size="lg" className="h-16 px-12 text-xl rounded-full bg-white text-primary hover:bg-green-50 font-bold shadow-2xl">
                 <Link href="/investors">Join as Investor</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="h-16 px-12 text-xl rounded-full border-2 border-white/40 hover:bg-white/10 text-white font-bold">
+                <Button asChild variant="outline" size="lg" className="h-16 px-12 text-xl rounded-full border-2 border-white text-white hover:bg-white/10 hover:text-white transition-colors font-bold">
                     <Link href="/contact">Request Pitch Deck</Link>
                 </Button>
             </div>
