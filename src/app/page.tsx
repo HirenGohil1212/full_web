@@ -45,17 +45,20 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       {/* High-Impact Centered Hero Section */}
-      <section className="relative w-full py-24 md:py-48 overflow-hidden bg-background border-b flex items-center justify-center min-h-[90vh]">
+      <section className="relative w-full pt-16 pb-24 md:pt-24 md:pb-40 overflow-hidden bg-background border-b flex items-center justify-center min-h-[85vh]">
         {/* Immersive Background Glows */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl h-[700px] bg-primary/10 rounded-full blur-[140px] pointer-events-none -z-10 opacity-70"></div>
         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.03] pointer-events-none"></div>
         
         <div className="container relative z-10 flex flex-col items-center text-center">
           {/* Highlighted Tagline */}
-          <div className="mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
-             <span className="text-primary font-black text-xs md:text-sm tracking-[0.6em] uppercase border-b-2 border-primary/20 pb-2">
-                Ideate. Innovate. Impact.
-             </span>
+          <div className="mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+             <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-primary/20 bg-primary/5 backdrop-blur-sm">
+                <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+                <span className="text-primary font-black text-xs md:text-sm tracking-[0.4em] uppercase">
+                    Ideate. Innovate. Impact.
+                </span>
+             </div>
           </div>
           
           <h1 className="text-5xl md:text-8xl lg:text-9xl font-black leading-[0.9] tracking-tighter mb-10 max-w-[1300px] animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200">
@@ -232,7 +235,7 @@ export default function Home() {
                   alt="Team Collaboration"
                   width={400}
                   height={500}
-                  data-ai-hint="team meeting"
+                  data-ai-hint={whyUsMeeting.imageHint}
                   className="absolute top-0 left-0 rounded-3xl shadow-2xl object-cover w-[400px] h-[500px] z-10 border-4 border-white"
                 />
               )}
@@ -242,7 +245,7 @@ export default function Home() {
                   alt="Code Focus"
                   width={350}
                   height={250}
-                  data-ai-hint="code screen"
+                  data-ai-hint={whyUsCode.imageHint}
                   className="absolute bottom-10 right-0 rounded-3xl shadow-2xl object-cover w-[350px] h-[250px] z-20 border-4 border-white"
                 />
               )}
