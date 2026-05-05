@@ -40,7 +40,7 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="absolute top-0 right-0 -mr-20 -mt-20 size-80 bg-primary/5 rounded-full blur-3xl" />
         <div className="container relative z-10">
           <Link href="/blog" className="inline-flex items-center text-primary font-bold mb-8 hover:underline group text-sm uppercase tracking-widest">
-            <ArrowLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" /> Back to Blog
+            <ArrowLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" /> Back to Knowledge Center
           </Link>
           <div className="max-w-4xl">
             <Badge className="mb-6 bg-primary text-white px-4 py-1.5 text-xs uppercase tracking-[0.2em] font-black">
@@ -103,12 +103,12 @@ export default async function BlogPostPage({ params }: Props) {
               
               <article className="prose prose-lg dark:prose-invert max-w-none 
                 prose-headings:font-display prose-headings:font-black prose-headings:tracking-tight prose-headings:text-foreground
-                prose-h2:text-3xl md:prose-h2:text-4xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:border-l-4 prose-h2:border-primary prose-h2:pl-6 prose-h2:bg-primary/5 prose-h2:py-4
-                prose-h3:text-xl md:prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-6 prose-h3:text-primary
+                prose-h2:text-2xl md:prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:border-l-4 prose-h2:border-primary prose-h2:pl-6 prose-h2:bg-primary/5 prose-h2:py-4 prose-h2:rounded-r-xl
+                prose-h3:text-lg md:prose-h3:text-xl prose-h3:mt-12 prose-h3:mb-6 prose-h3:text-primary prose-h3:uppercase prose-h3:tracking-widest
                 prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:text-lg prose-p:mb-8
-                prose-ul:my-10 prose-ul:list-none prose-ul:pl-0
-                prose-li:relative prose-li:pl-10 prose-li:text-muted-foreground prose-li:mb-6 prose-li:text-lg prose-li:font-medium
-                prose-li:before:content-[''] prose-li:before:absolute prose-li:before:left-0 prose-li:before:top-[12px] prose-li:before:size-4 prose-li:before:bg-primary prose-li:before:rounded-md prose-li:before:rotate-45
+                prose-ul:my-10 prose-ul:grid prose-ul:sm:grid-cols-2 prose-ul:gap-4 prose-ul:list-none prose-ul:pl-0
+                prose-li:relative prose-li:p-6 prose-li:bg-card prose-li:border prose-li:border-border/60 prose-li:rounded-2xl prose-li:shadow-sm prose-li:text-muted-foreground prose-li:mb-0 prose-li:text-base prose-li:font-medium prose-li:transition-all hover:prose-li:border-primary/30 hover:prose-li:shadow-md
+                prose-li:before:content-[''] prose-li:before:absolute prose-li:before:left-4 prose-li:before:top-4 prose-li:before:size-2 prose-li:before:bg-primary prose-li:before:rounded-full
                 prose-strong:text-foreground prose-strong:font-black prose-strong:bg-primary/10 prose-strong:px-1.5 prose-strong:rounded-sm
                 prose-img:rounded-[2rem] prose-img:border prose-img:shadow-xl
               ">
@@ -205,7 +205,7 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-[800px] bg-white/5 rounded-full blur-[120px] pointer-events-none" />
         <div className="container relative z-10 text-center max-w-4xl">
           <h2 className="text-5xl md:text-7xl font-black mb-8 tracking-tighter leading-tight">
-            Apply these <span className="text-accent underline decoration-accent/30 underline-offset-8">architectures</span> to your vision.
+            Apply these <span className="text-accent-foreground underline decoration-accent/30 underline-offset-8">architectures</span> to your vision.
           </h2>
           <p className="text-green-50 text-xl md:text-2xl mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
             Our team of expert architects is ready to translate these insights into a high-performance digital asset for your business.
