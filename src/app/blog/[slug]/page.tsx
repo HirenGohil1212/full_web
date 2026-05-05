@@ -103,11 +103,20 @@ export default async function BlogPostPage({ params }: Props) {
               
               <article className="prose prose-lg dark:prose-invert max-w-none 
                 prose-headings:font-display prose-headings:font-black prose-headings:tracking-tight prose-headings:text-foreground
-                prose-h2:text-2xl md:prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:border-l-4 prose-h2:border-primary prose-h2:pl-6 prose-h2:bg-primary/5 prose-h2:py-4 prose-h2:rounded-r-xl
+                
+                /* Each content-block acts like a Case Study card */
+                [&_.content-block]:mb-12 [&_.content-block]:p-8 [&_.content-block]:md:p-10 [&_.content-block]:rounded-[2.5rem] [&_.content-block]:bg-card [&_.content-block]:border [&_.content-block]:border-border/60 [&_.content-block]:shadow-sm [&_.content-block]:hover:shadow-md [&_.content-block]:transition-all
+                
+                [&_.content-block_h2]:text-2xl [&_.content-block_h2]:md:text-3xl [&_.content-block_h2]:mt-0 [&_.content-block_h2]:mb-8 [&_.content-block_h2]:border-l-4 [&_.content-block_h2]:border-primary [&_.content-block_h2]:pl-6 [&_.content-block_h2]:bg-transparent [&_.content-block_h2]:py-2
+                
                 prose-h3:text-lg md:prose-h3:text-xl prose-h3:mt-12 prose-h3:mb-6 prose-h3:text-primary prose-h3:uppercase prose-h3:tracking-widest
                 prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:text-lg prose-p:mb-8
+                
+                /* List Styling - Grid of Cards */
                 prose-ul:my-10 prose-ul:grid prose-ul:sm:grid-cols-2 prose-ul:gap-4 prose-ul:list-none prose-ul:pl-0
-                prose-li:relative prose-li:p-6 prose-li:bg-card prose-li:border prose-li:border-border/60 prose-li:rounded-2xl prose-li:shadow-sm prose-li:text-muted-foreground prose-li:mb-0 prose-li:text-base prose-li:font-medium prose-li:transition-all hover:prose-li:border-primary/30 hover:prose-li:shadow-md
+                prose-li:relative prose-li:p-6 prose-li:bg-background prose-li:border prose-li:border-border/60 prose-li:rounded-2xl prose-li:shadow-sm prose-li:text-muted-foreground prose-li:mb-0 prose-li:text-base prose-li:font-medium prose-li:transition-all hover:prose-li:border-primary/30 hover:prose-li:shadow-md
+                
+                /* Checkmark Replacement */
                 prose-li:before:content-[''] prose-li:before:absolute prose-li:before:left-4 prose-li:before:top-4 prose-li:before:size-2 prose-li:before:bg-primary prose-li:before:rounded-full
                 prose-strong:text-foreground prose-strong:font-black prose-strong:bg-primary/10 prose-strong:px-1.5 prose-strong:rounded-sm
                 prose-img:rounded-[2rem] prose-img:border prose-img:shadow-xl
