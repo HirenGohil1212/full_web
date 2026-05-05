@@ -15,6 +15,7 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
   { href: '/portfolio', label: 'Portfolio' },
+  { href: '/blog', label: 'Blog' },
   { href: '/startups', label: 'Our Startups', hot: true },
   { href: '/about', label: 'About' },
   { href: '/investors', label: 'Investors' },
@@ -115,8 +116,8 @@ export default function Header() {
           ) : (
              <>
                {/* Fallback skeleton for SSR to prevent hydration mismatch. This MUST match on the initial client render. */}
-               <div className="hidden h-10 w-[584px] items-center justify-end gap-4 md:flex">
-                   <div className="h-6 w-[480px]"></div>
+               <div className="hidden h-10 w-[650px] items-center justify-end gap-4 md:flex">
+                   <div className="h-6 w-[540px]"></div>
                    <div className="h-10 w-[104px]"></div>
                </div>
                <div className="h-10 w-10 md:hidden"></div>

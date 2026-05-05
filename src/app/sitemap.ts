@@ -1,4 +1,6 @@
+
 import { MetadataRoute } from 'next';
+import { blogPosts } from '@/lib/blog-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.indicortexsolutions.com';
@@ -21,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/investors',
     '/contact',
     '/case-studies',
+    '/blog',
   ];
 
   const staticSitemap = pages.map((page) => ({
@@ -37,5 +40,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticSitemap, ...serviceSitemap];
+  const blogSitemap = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.6,
+  }));
+
+  return [...staticSitemap, ...serviceSitemap, ...blogSitemap];
 }

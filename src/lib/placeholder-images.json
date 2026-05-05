@@ -43,22 +43,28 @@
       "imageHint": "professional portrait"
     },
     {
-      "id": "team-member-2",
-      "description": "Portrait of Priya Sharma, Chief Technology Officer",
-      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAYkYMgMqbmZAdrNTUN8OE_PZLlsshzahHvK35yGKS--830Q255UWzmiGYk1cyyu2hajfIqhzFXSJTvOIWT-lqENsMJa9uLzctB1AJDgT7nzSC6RbbJycOIX547X6Z5stWQu7Rlgn-LeqHkW9UW-Uv0kExi59_9ypELKCW4Ie8qCY4u-GgCoqWOuM-_Jeze41Ae0Dee_8Y7x3g8G2Myutl4eQkIjGl-jMZw-5PSOwMlzCylplS_WrQ2W-qrCTO-CnqVrbxLuHQHchI",
-      "imageHint": "professional portrait"
+      "id": "blog-hero",
+      "description": "Clean modern desk with laptop and notebook",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBNYf0I1U6_3yE_C2tX8FjK9Z2l8fF-J8Q4C9_3_pP1W_mQ_V4N_9D_yX9G_6W8M_zC9H_rP1W_mQ_V4N_9D_yX9G_6W8M_zC9H",
+      "imageHint": "modern office"
     },
     {
-      "id": "team-member-3",
-      "description": "Portrait of Vikram Singh, Lead AI Architect",
-      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDg1FgFxiY44rzCqZH4cFqKB-PTiMCntgj8u71pRucFv4vAn34SCHHmpxG2-gOwJK-Bj0FOmvI2YGHYfl--dsprPdU8kYWsvedG4ca5Y7NXnK6NHEATbUVbppjaV9wEZOBM1T8oCNRPJNjjdwS4VrdcMDT63aTEgk9QzwcfZsOROs7WmfTQFyczrdfPeedWZg0FNaNyNaqBePPaFb0LqD-Iw6v4ja7PYeCyst0pNCS-ajcSnwHY1xp99zPLNNudXiDRjfVXFv_Shyg",
-      "imageHint": "professional portrait"
+      "id": "blog-ai",
+      "description": "AI and brain visualization with data lines",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCIkkgJH2c_WGE1Vl6_D49jb1lqSMJZqN0j9G8EBqov6QvwfHgsf7J-A4PpiE72U8rviymMs8eoa7xHliSUmKsSZSqEmzCajp_QvLjJMIyj6lfy5QVYFqOvxs3iyIQkftxVONmgUAtHL0iOyotKL8R-BkuLq5huGDxUmz4MwS3hIds1HQT2HJegvoN_jvTpVpaUtHCftIDEF44sXqlB7px8V3W-lRSoYaCNC_4gMJS3Ex2OBVxEfC9kyqghgmwBVqx4rqDqu4gdVrk",
+      "imageHint": "ai technology"
     },
     {
-      "id": "team-member-4",
-      "description": "Portrait of Ananya Das, Head of Product",
-      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBkKPcXn2CsmUsNacbdtDdnl3xeFU2izf_rOhvPYOym87AyIgdgMxs5m-AGpciqPUM7WxbLpczOCQ3_rRwvmDr1psLHyvay7iVYEIxKyVx3SykrtBUroZGtdAXgSkxVYCVen88F7esONAUdNh_NB8CcwivNydhJcAIzxvy9zIdqt0JSuytcNx0nzXucJ27RRiNbqOKPE0Y2eELo6uSivwbXMSJikaK7y7EUBFDPrXqrl2HHoqa3y00K1qZumVGhAavW9Hu5DGWPOLY",
-      "imageHint": "professional portrait"
+      "id": "blog-mobile",
+      "description": "Mobile app development on a smartphone screen",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCFwietv0flvD-GQxlJHMfPi6VBVbyHacqVYHd5dzODD7W3COXTwnKSScyeN4fPqHoPOzkVTr0KYO00xQVsXpTd44XM5snmpHANOsuUGTHLyhiI_mO4yMyBOFnOqSjWysKOlH7l39pLcuw57at6xpNyrHwYA40shfUEukzUJHkguqIcxzjXhrkPGRZ99cMsyRvY0RY6R5PGYLVssvPpcmp6wSCSgzBIw2g_zygZPP5ezj8yESamCm3V-z11nUAsa6zenYhS2rIngC8",
+      "imageHint": "mobile development"
+    },
+    {
+      "id": "blog-web",
+      "description": "Web architecture and cloud visualization",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBCEtYZMmaa2L_YE9m2qb2IoAda299FZ8HoBuS4I-bA-IIYF40ZLx4SRRMzIM7hRHh2U7apR1zRhsA5emK6rkhbJuvwf7sG_8fcs_Gk0OiVW6Vy9OLfmY7VP7EC8pz_kaA6Hp69FTsVBFAtUSxROZJUlA5AS3ntwTf7PO4IGt91JidxoKR0eKH2K_cB-L-kYDUGWBUj69HZMMWVgtrRFWRTwrANRn17JL3z86q9o_Ji6W2oZQfHrDpuiNn2heVeC_6QRqFk7ZesXB0",
+      "imageHint": "web development"
     },
     {
       "id": "investor-hero",
