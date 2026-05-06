@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const pages = [
-    '/',
+    '',
     '/services',
     '/portfolio',
     '/startups',
@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${page}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: page === '/' ? 1 : 0.8,
+    priority: page === '' ? 1 : 0.8,
   }));
 
   const serviceSitemap = services.map((slug) => ({
