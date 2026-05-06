@@ -76,6 +76,23 @@ export default function RootLayout({
         />
         <link rel="preconnect" href="https://embed.tawk.to" />
         <link rel="preconnect" href="https://va.tawk.to" />
+        <Script
+          id="json-ld-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Indicortex Solutions",
+              "url": "https://www.indicortexsolutions.com/",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.indicortexsolutions.com/blog?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            }),
+          }}
+        />
       </head>
       <body
         className={cn(

@@ -33,16 +33,16 @@ export default function Footer() {
                       <li><Link href="/services" className="hover:text-primary transition-colors">Mobile Apps</Link></li>
                       <li><Link href="/services" className="hover:text-primary transition-colors">Web Development</Link></li>
                       <li><Link href="/services" className="hover:text-primary transition-colors">AI Solutions</Link></li>
-                      <li><Link href="/services" className="hover:text-primary transition-colors">Consulting</Link></li>
+                      <li><Link href="/services" className="hover:text-primary transition-colors">IT Consulting</Link></li>
                   </ul>
               </div>
               <div className="flex flex-col gap-3">
                   <h3 className="text-sm font-bold uppercase tracking-wider">Company</h3>
                   <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
-                      <li><Link href="/about" className="hover:text-primary transition-colors">About</Link></li>
-                      <li><Link href="/portfolio" className="hover:text-primary transition-colors">Portfolio</Link></li>
-                      <li><Link href="/contact" className="hover:text-primary transition-colors">Careers</Link></li>
-                      <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
+                      <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
+                      <li><Link href="/portfolio" className="hover:text-primary transition-colors">Our Portfolio</Link></li>
+                      <li><Link href="/case-studies" className="hover:text-primary transition-colors">Success Stories</Link></li>
+                      <li><Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link></li>
                   </ul>
               </div>
             </div>

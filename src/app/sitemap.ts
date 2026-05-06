@@ -14,23 +14,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'ai-and-machine-learning',
   ];
 
-  const pages = [
-    '',
-    '/services',
-    '/portfolio',
-    '/startups',
-    '/about',
-    '/investors',
-    '/contact',
-    '/case-studies',
-    '/blog',
+  const mainPages = [
+    { url: '', priority: 1.0 },
+    { url: '/services', priority: 0.8 },
+    { url: '/portfolio', priority: 0.8 },
+    { url: '/startups', priority: 0.8 },
+    { url: '/about', priority: 0.8 },
+    { url: '/investors', priority: 0.8 },
+    { url: '/contact', priority: 0.8 },
+    { url: '/case-studies', priority: 0.8 },
+    { url: '/blog', priority: 0.8 },
   ];
 
-  const staticSitemap = pages.map((page) => ({
-    url: `${baseUrl}${page}`,
+  const staticSitemap = mainPages.map((page) => ({
+    url: `${baseUrl}${page.url}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: page === '' ? 1 : 0.8,
+    priority: page.priority,
   }));
 
   const serviceSitemap = services.map((slug) => ({
