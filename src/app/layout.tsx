@@ -23,7 +23,11 @@ export const metadata: Metadata = {
     'startup funding',
     'IT services',
     'Indicortex',
+    'GrowKrishi',
   ],
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Indicortex Solutions LLP - AI, Web & Mobile Development',
     description:
@@ -33,15 +37,16 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/logo.png',
-        width: 32,
-        height: 32,
+        width: 1200,
+        height: 630,
+        alt: 'Indicortex Solutions Logo',
       },
     ],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'Indicortex Solutions LLP - AI, Web & Mobile Development',
     description:
       'Indicortex Solutions LLP delivers cutting-edge AI, web, and mobile app development services. We build scalable, intelligent software solutions to drive business growth.',

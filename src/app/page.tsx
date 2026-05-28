@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Check, Verified, Smartphone, Globe, Bot, Code, Terminal, Cloud, ArrowRight, Briefcase, TrendingUp, Users, Sparkles } from 'lucide-react';
+import { Check, Verified, Smartphone, Globe, Bot, Code, Terminal, Cloud, ArrowRight, Briefcase, TrendingUp, Sparkles, Settings2, CloudCog, BrainCircuit } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -15,17 +15,38 @@ const services = [
   {
     icon: Smartphone,
     title: 'Mobile App Development',
+    slug: 'mobile-app-development',
     description: 'Native and cross-platform apps built with Flutter and React Native that engage users and perform flawlessly.'
   },
   {
     icon: Globe,
     title: 'Web Development',
+    slug: 'web-development',
     description: 'Scalable, high-performance websites and web applications using modern frameworks like React and Next.js.'
   },
   {
     icon: Bot,
     title: 'AI Agent Development',
+    slug: 'ai-agent-development',
     description: 'Next-gen automation and intelligence for your workflow using LLMs and custom AI agents.'
+  },
+  {
+    icon: Settings2,
+    title: 'Managed IT Services',
+    slug: 'managed-it-services',
+    description: 'Comprehensive IT management, from helpdesk support to strategic infrastructure planning.'
+  },
+  {
+    icon: CloudCog,
+    title: 'Cloud Solutions',
+    slug: 'cloud-solutions',
+    description: 'Scale your business with confidence using our cloud migration and architecture optimization.'
+  },
+  {
+    icon: BrainCircuit,
+    title: 'AI & Machine Learning',
+    slug: 'ai-and-machine-learning',
+    description: 'Integrate predictive analytics and machine learning models into your products.'
   }
 ];
 
@@ -46,12 +67,10 @@ export default function Home() {
     <div className="flex flex-col min-h-[100dvh]">
       {/* High-Impact Centered Hero Section */}
       <section className="relative w-full pt-8 pb-12 md:pt-12 md:pb-16 overflow-hidden bg-background border-b flex items-center justify-center min-h-[70vh] md:min-h-[80vh]">
-        {/* Immersive Background Glows */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl h-[600px] bg-primary/10 rounded-full blur-[140px] pointer-events-none -z-10 opacity-70"></div>
         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.03] pointer-events-none"></div>
         
         <div className="container relative z-10 flex flex-col items-center text-center">
-          {/* Highlighted Tagline */}
           <div className="mb-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
              <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-primary/20 bg-primary/5 backdrop-blur-sm">
                 <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
@@ -78,7 +97,6 @@ export default function Home() {
             </Button>
           </div>
           
-          {/* Modern Tech Stack Indicator */}
           <div className="mt-10 md:mt-16 w-full max-w-4xl animate-in fade-in duration-1000 delay-1000">
              <div className="flex flex-wrap justify-center gap-6 md:gap-10 opacity-30 hover:opacity-100 transition-opacity duration-500">
                 {techStack.map((tech) => (
@@ -97,7 +115,7 @@ export default function Home() {
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
             <div className="max-w-2xl">
-              <h2 className="text-4xl md:text-5xl font-black leading-tight mb-6">What We Build</h2>
+              <h2 className="text-4xl md:text-5xl font-black leading-tight mb-6">Expert IT Solutions</h2>
               <p className="text-muted-foreground text-xl">
                 Scalable software architectures and intelligent AI systems tailored to your unique business logic.
               </p>
@@ -116,7 +134,7 @@ export default function Home() {
                    </div>
                   <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
                   <p className="text-muted-foreground mb-8 text-lg leading-relaxed flex-grow">{service.description}</p>
-                   <Link href={`/services/${service.title.toLowerCase().replace(/ /g, '-')}`} className="inline-flex items-center text-primary font-bold hover:underline gap-2 group-hover:gap-3 transition-all" aria-label={`Explore ${service.title}`}>
+                   <Link href={`/services/${service.slug}`} className="inline-flex items-center text-primary font-bold hover:underline gap-2 group-hover:gap-3 transition-all" aria-label={`Explore ${service.title}`}>
                       Explore Details <ArrowRight className="size-5" />
                   </Link>
                 </div>
@@ -178,7 +196,7 @@ export default function Home() {
           </div>
           <div className="mt-16 text-center">
             <Button asChild size="lg" className="rounded-full px-10 h-14 font-bold">
-                <Link href="/case-studies">Explore All Case Studies</Link>
+                <Link href="/case-studies">Explore All Success Stories</Link>
             </Button>
           </div>
         </div>
@@ -310,7 +328,6 @@ export default function Home() {
 
       {/* Final Global CTA - Immersive Redesign */}
       <section id="cta" className="py-24 md:py-32 relative overflow-hidden bg-foreground text-background">
-        {/* Futuristic Background Accents */}
         <div className="absolute top-0 right-0 -mr-40 -mt-40 size-[600px] bg-primary/20 rounded-full blur-[140px] pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 -ml-40 -mb-40 size-[600px] bg-accent/10 rounded-full blur-[140px] pointer-events-none"></div>
         

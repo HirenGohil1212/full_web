@@ -16,20 +16,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const mainPages = [
     { url: '', priority: 1.0 },
-    { url: '/services', priority: 0.8 },
+    { url: '/services', priority: 0.9 },
     { url: '/portfolio', priority: 0.8 },
     { url: '/startups', priority: 0.8 },
     { url: '/about', priority: 0.8 },
-    { url: '/investors', priority: 0.8 },
-    { url: '/contact', priority: 0.8 },
-    { url: '/case-studies', priority: 0.8 },
-    { url: '/blog', priority: 0.8 },
+    { url: '/investors', priority: 0.7 },
+    { url: '/contact', priority: 0.7 },
+    { url: '/case-studies', priority: 0.9 },
+    { url: '/blog', priority: 0.9 },
   ];
 
   const staticSitemap = mainPages.map((page) => ({
     url: `${baseUrl}${page.url}`,
     lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
+    changeFrequency: 'weekly' as const,
     priority: page.priority,
   }));
 
@@ -37,21 +37,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/services/${slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: 0.7,
+    priority: 0.8,
   }));
 
   const caseStudySitemap = caseStudies.map((study) => ({
     url: `${baseUrl}/case-studies/${study.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: 0.7,
+    priority: 0.8,
   }));
 
   const blogSitemap = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
-    priority: 0.6,
+    priority: 0.7,
   }));
 
   return [...staticSitemap, ...serviceSitemap, ...caseStudySitemap, ...blogSitemap];
