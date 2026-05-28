@@ -81,10 +81,9 @@ export default function RootLayout({
         />
         <link rel="preconnect" href="https://embed.tawk.to" />
         <link rel="preconnect" href="https://va.tawk.to" />
-        <Script
+        <script
           id="json-ld-schema"
           type="application/ld+json"
-          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
@@ -106,7 +105,7 @@ export default function RootLayout({
               (function() {
                 var oldError = console.error;
                 console.error = function() {
-                  if (arguments[0] === true || (typeof arguments[0] === 'string' && arguments[0].includes('tawk.to'))) {
+                  if (arguments[0] === true || (typeof arguments[0] === 'string' && (arguments[0].includes('tawk.to') || arguments[0].includes('twk-chunk')))) {
                     return;
                   }
                   oldError.apply(console, arguments);
