@@ -8,6 +8,7 @@ const cspHeader = `
     img-src 'self' blob: data: https://images.unsplash.com https://picsum.photos https://lh3.googleusercontent.com https://placehold.co https://*.tawk.to https://embed.tawk.to;
     connect-src 'self' blob: https://*.tawk.to https://va.tawk.to https://embed.tawk.to https://www.google-analytics.com wss://*.tawk.to;
     frame-src 'self' https://*.tawk.to https://embed.tawk.to;
+    media-src 'self' https://*.tawk.to https://embed.tawk.to;
     worker-src 'self' blob:;
     upgrade-insecure-requests;
 `;
