@@ -81,9 +81,24 @@ export default function RootLayout({
         />
         <link rel="preconnect" href="https://embed.tawk.to" />
         <link rel="preconnect" href="https://va.tawk.to" />
-        <script
+        {/* Schema and Suppression scripts moved to next/script for hydration stability */}
+      </head>
+      <body
+        className={cn(
+          'min-h-screen bg-background font-body antialiased flex flex-col'
+        )}
+      >
+        <Header />
+        <main className="flex-grow">{children}</main>
+        <Footer />
+        <Toaster />
+        <Analytics />
+        
+        {/* JSON-LD Schema using next/script to avoid hydration mismatches */}
+        <Script
           id="json-ld-schema"
           type="application/ld+json"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
@@ -98,36 +113,26 @@ export default function RootLayout({
             }),
           }}
         />
-        <script
-          id="suppress-tawk-noise"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                var oldError = console.error;
-                console.error = function() {
-                  if (arguments[0] === true || (typeof arguments[0] === 'string' && (arguments[0].includes('tawk.to') || arguments[0].includes('twk-chunk')))) {
-                    return;
-                  }
-                  oldError.apply(console, arguments);
-                };
-              })();
-            `
-          }}
-        />
-      </head>
-      <body
-        className={cn(
-          'min-h-screen bg-background font-body antialiased flex flex-col'
-        )}
-      >
-        <Header />
-        <main className="flex-grow">{children}</main>
-        <Footer />
-        <Toaster />
-        <Analytics />
+
+        {/* Console error suppression for 3rd party widgets */}
+        <Script id="suppress-tawk-noise" strategy="afterInteractive">
+          {`
+            (function() {
+              var oldError = console.error;
+              console.error = function() {
+                if (arguments[0] === true || (typeof arguments[0] === 'string' && (arguments[0].includes('tawk.to') || arguments[0].includes('twk-chunk')))) {
+                  return;
+                }
+                oldError.apply(console, arguments);
+              };
+            })();
+          `}
+        </Script>
+
+        {/* Main Tawk.to Script */}
         <Script 
           id="tawk-to-integration"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
