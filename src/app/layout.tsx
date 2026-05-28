@@ -99,6 +99,19 @@ export default function RootLayout({
             }),
           }}
         />
+        <Script id="suppress-tawk-noise" strategy="beforeInteractive">
+          {`
+            (function() {
+              var oldError = console.error;
+              console.error = function() {
+                if (arguments[0] === true || (typeof arguments[0] === 'string' && arguments[0].includes('tawk.to'))) {
+                  return;
+                }
+                oldError.apply(console, arguments);
+              };
+            })();
+          `}
+        </Script>
       </head>
       <body
         className={cn(
@@ -112,7 +125,7 @@ export default function RootLayout({
         <Analytics />
         <Script 
           id="tawk-to-integration"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

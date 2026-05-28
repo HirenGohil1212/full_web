@@ -5,11 +5,11 @@ const cspHeader = `
     script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: https://*.tawk.to https://embed.tawk.to https://va.tawk.to https://www.google-analytics.com https://ssl.google-analytics.com;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.tawk.to https://embed.tawk.to;
     font-src 'self' https://fonts.gstatic.com https://*.tawk.to https://embed.tawk.to;
-    img-src 'self' blob: data: https://images.unsplash.com https://picsum.photos https://lh3.googleusercontent.com https://placehold.co https://*.tawk.to https://embed.tawk.to;
-    connect-src 'self' blob: https://*.tawk.to https://va.tawk.to https://embed.tawk.to https://www.google-analytics.com wss://*.tawk.to;
+    img-src 'self' blob: data: https://images.unsplash.com https://picsum.photos https://lh3.googleusercontent.com https://placehold.co https://*.tawk.to https://embed.tawk.to https://va.tawk.to;
+    connect-src 'self' blob: https://*.tawk.to https://va.tawk.to https://embed.tawk.to https://www.google-analytics.com wss://*.tawk.to wss://embed.tawk.to;
     frame-src 'self' https://*.tawk.to https://embed.tawk.to;
     media-src 'self' https://*.tawk.to https://embed.tawk.to;
-    worker-src 'self' blob:;
+    worker-src 'self' blob: https://*.tawk.to;
     upgrade-insecure-requests;
 `;
 
