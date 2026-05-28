@@ -99,19 +99,23 @@ export default function RootLayout({
             }),
           }}
         />
-        <Script id="suppress-tawk-noise" strategy="beforeInteractive">
-          {`
-            (function() {
-              var oldError = console.error;
-              console.error = function() {
-                if (arguments[0] === true || (typeof arguments[0] === 'string' && arguments[0].includes('tawk.to'))) {
-                  return;
-                }
-                oldError.apply(console, arguments);
-              };
-            })();
-          `}
-        </Script>
+        <Script 
+          id="suppress-tawk-noise" 
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var oldError = console.error;
+                console.error = function() {
+                  if (arguments[0] === true || (typeof arguments[0] === 'string' && arguments[0].includes('tawk.to'))) {
+                    return;
+                  }
+                  oldError.apply(console, arguments);
+                };
+              })();
+            `
+          }}
+        />
       </head>
       <body
         className={cn(
