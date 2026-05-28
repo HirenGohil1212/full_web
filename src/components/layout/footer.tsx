@@ -1,8 +1,17 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Linkedin, Instagram } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 export default function Footer() {
+  const [year, setYear] = useState<number>(2025);
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="bg-card border-t pt-12">
       <div className="container">
@@ -49,7 +58,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
              <p className="text-xs text-muted-foreground">
-                © {new Date().getFullYear()} Indicortex Solutions LLP. All rights reserved.
+                © {year} Indicortex Solutions LLP. All rights reserved.
             </p>
         </div>
       </div>

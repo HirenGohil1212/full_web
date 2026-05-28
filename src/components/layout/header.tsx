@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -104,7 +103,6 @@ export default function Header() {
         </Link>
         
         <div className="flex items-center gap-4">
-          {/* This content will only render on the client after the component has mounted. */}
           {isMounted ? (
             <>
               <NavLinks />
@@ -114,14 +112,7 @@ export default function Header() {
               <MobileNav />
             </>
           ) : (
-             <>
-               {/* Fallback skeleton for SSR to prevent hydration mismatch. This MUST match on the initial client render. */}
-               <div className="hidden h-10 w-[650px] items-center justify-end gap-4 md:flex">
-                   <div className="h-6 w-[540px]"></div>
-                   <div className="h-10 w-[104px]"></div>
-               </div>
-               <div className="h-10 w-10 md:hidden"></div>
-             </>
+             <div className="h-10 w-10 md:w-32 bg-muted/20 animate-pulse rounded-lg"></div>
            )}
         </div>
 
