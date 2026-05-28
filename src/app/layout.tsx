@@ -99,9 +99,8 @@ export default function RootLayout({
             }),
           }}
         />
-        <Script 
-          id="suppress-tawk-noise" 
-          strategy="beforeInteractive"
+        <script
+          id="suppress-tawk-noise"
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
