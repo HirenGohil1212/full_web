@@ -81,7 +81,6 @@ export default function RootLayout({
         />
         <link rel="preconnect" href="https://embed.tawk.to" />
         <link rel="preconnect" href="https://va.tawk.to" />
-        {/* Schema and Suppression scripts moved to next/script for hydration stability */}
       </head>
       <body
         className={cn(
@@ -94,7 +93,7 @@ export default function RootLayout({
         <Toaster />
         <Analytics />
         
-        {/* JSON-LD Schema using next/script to avoid hydration mismatches */}
+        {/* JSON-LD Schema using next/script with afterInteractive to avoid hydration mismatches */}
         <Script
           id="json-ld-schema"
           type="application/ld+json"
@@ -114,9 +113,9 @@ export default function RootLayout({
           }}
         />
 
-        {/* Console error suppression for 3rd party widgets */}
-        <Script id="suppress-tawk-noise" strategy="afterInteractive">
-          {`
+        {/* Console error suppression for 3rd party widgets using afterInteractive */}
+        <Script id="suppress-tawk-noise" strategy="afterInteractive" dangerouslySetInnerHTML={{
+          __html: `
             (function() {
               var oldError = console.error;
               console.error = function() {
@@ -126,10 +125,10 @@ export default function RootLayout({
                 oldError.apply(console, arguments);
               };
             })();
-          `}
-        </Script>
+          `
+        }} />
 
-        {/* Main Tawk.to Script */}
+        {/* Main Tawk.to Script using afterInteractive */}
         <Script 
           id="tawk-to-integration"
           strategy="afterInteractive"
