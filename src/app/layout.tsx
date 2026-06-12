@@ -93,7 +93,7 @@ export default function RootLayout({
         <Toaster />
         <Analytics />
         
-        {/* JSON-LD Schema using next/script with afterInteractive to avoid hydration mismatches */}
+        {/* Full & Final Hydration Fix: Scripts managed by Next.js Script component */}
         <Script
           id="json-ld-schema"
           type="application/ld+json"
@@ -113,9 +113,8 @@ export default function RootLayout({
           }}
         />
 
-        {/* Console error suppression for 3rd party widgets using afterInteractive */}
-        <Script id="suppress-tawk-noise" strategy="afterInteractive" dangerouslySetInnerHTML={{
-          __html: `
+        <Script id="suppress-tawk-noise" strategy="afterInteractive">
+          {`
             (function() {
               var oldError = console.error;
               console.error = function() {
@@ -125,10 +124,9 @@ export default function RootLayout({
                 oldError.apply(console, arguments);
               };
             })();
-          `
-        }} />
+          `}
+        </Script>
 
-        {/* Main Tawk.to Script using afterInteractive */}
         <Script 
           id="tawk-to-integration"
           strategy="afterInteractive"
