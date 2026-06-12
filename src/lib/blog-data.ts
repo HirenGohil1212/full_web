@@ -43,7 +43,7 @@ export const blogPosts: BlogPost[] = [
     date: "Jun 12, 2026",
     author: "Hiren Gohil",
     readTime: "8 min read",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBwrvhSbyIzgvFpgYDlfQ4hJkqFQh_6OK_xi5yleHzhJsU5QeP_ATaw_uBFk__Os1v8LRnW3ipEpJ32i3DB--bJFcDltTUBUc8P_cEKDO61Ird (image_url was truncated)",
+    imageUrl: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1000",
     imageHint: "future of search",
     keywords: ["SEO 2026", "AI Search", "SGE", "Digital Marketing", "Schema Markup"]
   },
@@ -83,7 +83,7 @@ export const blogPosts: BlogPost[] = [
     date: "Jun 11, 2026",
     author: "Hiren Gohil",
     readTime: "9 min read",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDQTI1XNymub1mp4lWqYryDJtsrItpg9kKD1K-VC_XZa1mQoFGCoE7Q0PAr9e9tV0xY6HaNCHR8gJXDSl85mFn1WMpNS3Kbj2CvljqqR_LQiYJNQWfK8ZlAU-p6rt9jOmUAVfO5IpczzQbRd4tZs_zhNBI-TnC8ZV9aP2WEE89aweE20t_xybQTo-wYGAvT-Y8Lr6tFTNQwJ3wsPK5Rb6FwOws4Hm4kSIuW2xjWD_80-5gizeYkQmMEe9IgPMY7ADUhWtgO7fru-BA",
+    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
     imageHint: "revenue growth graph",
     keywords: ["App Monetization", "Revenue Models", "ROI", "Business Strategy"]
   },
@@ -117,7 +117,7 @@ export const blogPosts: BlogPost[] = [
     date: "Jun 10, 2026",
     author: "Hiren Gohil",
     readTime: "7 min read",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBwrvhSbyIzgvFpgYDlfQ4hJkqFQh_6OK_xi5yleHzhJsU5QeP_ATaw_uBFk__Os1v8LRnW3ipEpJ32i3DB--bJFcDltTUBUc8P_cEKDO61Ird_CqyaddBl76RGk1tS08-XAH8b0oKAd3-up1Z1n88pl-k6ffs05QU8DbaJI7sPN9RvM9vhHaD2FfXhPbVsxaXezRZCCjWLo1x8J4fE1mk_kNTr-CryP3nru4Lix98_Z0nVSrM7sSyvoeXHE-HaqUypBSyYHOit5FU",
+    imageUrl: "https://images.unsplash.com/photo-1512428559083-a400a6b82c6a?auto=format&fit=crop&q=80&w=1000",
     imageHint: "indian digital map",
     keywords: ["Indian Apps", "Utility Apps", "Digital India", "Productivity"]
   },
@@ -135,7 +135,7 @@ export const blogPosts: BlogPost[] = [
     date: "Jun 09, 2026",
     author: "Hiren Gohil",
     readTime: "5 min read",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCFwietv0flvD-GQxlJHMfPi6VBVbyHacqVYHd5dzODD7W3COXTwnKSScyeN4fPqHoPOzkVTr0KYO00xQVsXpTd44XM5snmpHANOsuUGTHLyhiI_mO4yMyBOFnOqSjWysKOlH7l39pLcuw57at6xpNyrHwYA40shfUEukzUJHkguqIcxzjXhrkPGRZ99cMsyRvY0RY6R5PGYLVssvPpcmp6wSCSgzBIw2g_zygZPP5ezj8yESamCm3V-z11nUAsa6zenYhS2rIngC8",
+    imageUrl: "https://images.unsplash.com/photo-1506784919141-93f640f8b809?auto=format&fit=crop&q=80&w=1000",
     imageHint: "daily routine visualization",
     keywords: ["Daily Routine", "Productivity", "Mobile Habits"]
   },
@@ -153,7 +153,7 @@ export const blogPosts: BlogPost[] = [
     date: "Jun 08, 2026",
     author: "Hiren Gohil",
     readTime: "5 min read",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBn3P9wd7_o7o06dT7BVRWcBqNcwg6FWaHRyhUOdVjwC84goEyHKvB8YX7v_1BU3-tEB4AXX_zgmn4INh8-EfPMeaYdgTFeH6pgRdQpUkHr7iGVWjkw555cQz-FefHy04g7OMQI5feRimcghY-lQs9P33W5IcKG7pjFthXDbnUFdu_SHsfml_xZ-f4YG5nc0p0fGVzIeaKLkdiMEeUNR1gtDLz-xJMUvhhV1t8a33gnZ_LPrsQEOtBBEgae4zh9mYBT2BQWGx6q0_4",
+    imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1000",
     imageHint: "startup growth",
     keywords: ["MVP", "Startup Strategy", "Launch"]
   },
@@ -171,7 +171,7 @@ export const blogPosts: BlogPost[] = [
     date: "Jun 07, 2026",
     author: "Hiren Gohil",
     readTime: "10 min read",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCIkkgJH2c_WGE1Vl6_D49jb1lqSMJZqN0j9G8EBqov6QvwfHgsf7J-A4PpiE72U8rviymMs8eoa7xHliSUmKsSZSqEmzCajp_QvLjJMIyj6lfy5QVYFqOvxs3iyIQkftxVONmgUAtHL0iOyotKL8R-BkuLq5huGDxUmz4MwS3hIds1HQT2HJegvoN_jvTpVpaUtHCftIDEF44sXqlB7px8V3W-lRSoYaCNC_4gMJS3Ex2OBVxEfC9kyqghgmwBVqx4rqDqu4gdVrk",
+    imageUrl: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=1000",
     imageHint: "ai integration",
     keywords: ["AI Guide", "Workflow", "Automation"]
   },
@@ -189,7 +189,7 @@ export const blogPosts: BlogPost[] = [
     date: "Jun 06, 2026",
     author: "Hiren Gohil",
     readTime: "7 min read",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBCEtYZMmaa2L_YE9m2qb2IoAda299FZ8HoBuS4I-bA-IIYF40ZLx4SRRMzIM7hRHh2U7apR1zRhsA5emK6rkhbJuvwf7sG_8fcs_Gk0OiVW6Vy9OLfmY7VP7EC8pz_kaA6Hp69FTsVBFAtUSxROZJUlA5AS3ntwTf7PO4IGt91JidxoKR0eKH2K_cB-L-kYDUGWBUj69HZMMWVgtrRFWRTwrANRn17JL3z86q9o_Ji6W2oZQfHrDpuiNn2heVeC_6QRqFk7ZesXB0",
+    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1000",
     imageHint: "tech stack",
     keywords: ["AI Tools", "Genkit", "Firebase"]
   },
@@ -207,7 +207,7 @@ export const blogPosts: BlogPost[] = [
     date: "Jun 05, 2026",
     author: "Hiren Gohil",
     readTime: "6 min read",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCIkkgJH2c_WGE1Vl6_D49jb1lqSMJZqN0j9G8EBqov6QvwfHgsf7J-A4PpiE72U8rviymMs8eoa7xHliSUmKsSZSqEmzCajp_QvLjJMIyj6lfy5QVYFqOvxs3iyIQkftxVONmgUAtHL0iOyotKL8R-BkuLq5huGDxUmz4MwS3hIds1HQT2HJegvoN_jvTpVpaUtHCftIDEF44sXqlB7px8V3W-lRSoYaCNC_4gMJS3Ex2OBVxEfC9kyqghgmwBVqx4rqDqu4gdVrk",
+    imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000",
     imageHint: "ai technology",
     keywords: ["AI Agents", "Automation", "Workflow"]
   },
@@ -225,7 +225,7 @@ export const blogPosts: BlogPost[] = [
     date: "Jun 04, 2026",
     author: "Hiren Gohil",
     readTime: "8 min read",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCFwietv0flvD-GQxlJHMfPi6VBVbyHacqVYHd5dzODD7W3COXTwnKSScyeN4fPqHoPOzkVTr0KYO00xQVsXpTd44XM5snmpHANOsuUGTHLyhiI_mO4yMyBOFnOqSjWysKOlH7l39pLcuw57at6xpNyrHwYA40shfUEukzUJHkguqIcxzjXhrkPGRZ99cMsyRvY0RY6R5PGYLVssvPpcmp6wSCSgzBIw2g_zygZPP5ezj8yESamCm3V-z11nUAsa6zenYhS2rIngC8",
+    imageUrl: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1000",
     imageHint: "mobile development",
     keywords: ["Flutter", "React Native", "Startup"]
   },
@@ -243,7 +243,7 @@ export const blogPosts: BlogPost[] = [
     date: "Jun 03, 2026",
     author: "Hiren Gohil",
     readTime: "7 min read",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBCEtYZMmaa2L_YE9m2qb2IoAda299FZ8HoBuS4I-bA-IIYF40ZLx4SRRMzIM7hRHh2U7apR1zRhsA5emK6rkhbJuvwf7sG_8fcs_Gk0OiVW6Vy9OLfmY7VP7EC8pz_kaA6Hp69FTsVBFAtUSxROZJUlA5AS3ntwTf7PO4IGt91JidxoKR0eKH2K_cB-L-kYDUGWBUj69HZMMWVgtrRFWRTwrANRn17JL3z86q9o_Ji6W2oZQfHrDpuiNn2heVeC_6QRqFk7ZesXB0",
+    imageUrl: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=1000",
     imageHint: "web architecture",
     keywords: ["Next.js", "Web Dev", "SEO"]
   }

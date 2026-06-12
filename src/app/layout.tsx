@@ -93,7 +93,6 @@ export default function RootLayout({
         <Toaster />
         <Analytics />
         
-        {/* Full & Final Hydration Fix: Scripts managed by Next.js Script component */}
         <Script
           id="json-ld-schema"
           type="application/ld+json"
